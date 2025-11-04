@@ -1,0 +1,44 @@
+#Patient Registration
+
+Dear Mr. Imran,
+Thank you for registering iCure Health Care System. Your Patient ID no - 351.
+You can download your patient card from here -
+www.icure.com/user/PatientCard351.
+
+**This is an automatically genarated email, Please do not reply.**
+
+Best Regards,
+Adminstartor
+iCure Health Care System
+
+#Appointment Creation
+
+
+Dear Mr. Imran, 
+Your Appointment Confirmed with Dr. Hasanuzzaman On June 23, 2020 at 8:30 PM. Your Appointment ID is - SAT12032123.
+Please be present 30 Min earlier of Appointment time.
+
+To cancel or reschedule your apponintment before the scheduled time call at 01786354125.
+
+Thank you for book appointment with iCUre Health Care System.
+
+**This is an automatically genarated email, Please do not reply.**
+
+Best Regards,
+Adminstartor
+iCure Health Care System
+
+
+#Bill Creation
+
+Dear Mr. Imran, 
+
+A Bill has been created in iCure Health Care System. Your invoice ID is WEB1254213. Please check attachment for Bill invoice.
+
+Thank you for being with iCure Health Care system.
+
+**This is an automatically genarated email, Please do not reply.**
+
+Best Regards,
+Adminstartor
+iCure Health Care System

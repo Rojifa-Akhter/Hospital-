@@ -1,0 +1,122 @@
+=======================================================================================
+
+.bg-green-apple{
+    background-color: #6ab04c;
+}
+
+.bg-light-gray{
+    background-color: #c7d1dc!important;
+    color: #222
+}
+
+.bg-brown{
+    background-color: #964B00;
+    color: #fff;
+}
+
+.bg-blue{
+    background-color: #198ae3;
+    color: #fff;
+}
+
+.bg-blue:hover,
+.bg-blue:focus{
+    background-color: #126aaf;
+    color: #fff;
+}
+
+.bg-pumkin{
+    background-color: #d35400;
+    color: #fff;
+}
+
+.bg-pumkin:hover,
+.bg-pumkin:focus{
+    background-color: #a54f16;
+    color: #fff;
+}
+
+.bg-niphritis{
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.bg-niphritis:hover,
+.bg-niphritis:focus{
+    background-color: #0e8440;
+    color: #fff;
+}
+
+.bg-mazblue{
+    background-color:#273c75;
+    color: #fff;
+}
+
+.bg-mazblue:hover,
+.bg-mazblue:focus{
+    background-color:#3453a5;
+    color: #f1f1f1;
+}
+
+
+.bg-nextgen{
+    background-color: #084d2e;
+    color: #fff;
+}
+
+.bg-nextgen:hover,
+.bg-nextgen:focus{
+    background-color:#09643b;
+    color: #f1f1f1;
+}
+
+.thead_theme{
+    background-color: aqua;
+    color: #fff;
+}
+
+.bg-nextgen-light{
+    background-color: #5db403!important;
+    color: #fff;
+}
+
+.bg-nextgen-light:hover,
+.bg-nextgen-light:focus{
+    background-color:#5db403;
+    color: #f1f1f1;
+}
+
+
+.bg-table-light{
+    background-color:#4caf50!important;
+    color: #fff;
+}
+
+.bg-table-light:hover,
+.bg-table-light:focus{
+    background-color:#4caf50;
+    color: #f1f1f1;
+}
+
+.bg-light-gray{
+    background-color: #e5edf3!important;
+}
+
+.bg-soft-green{
+    background-color:#38c172!important;
+    color: #fff;
+}
+
+.bg-soft-green:hover,
+.bg-soft-green:focus{
+    background-color:#38c172;
+    color: #f1f1f1;
+}
+
+=======================================================================================
+
+/*Text colors*/
+
+.text_red{
+    color: #ec1c1c!important;
+}

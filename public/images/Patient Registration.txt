@@ -1,0 +1,15 @@
+#Patient Registration
+
+1. On key Board Nevigation DOB Reset
+2. On picture upload popup warning 3 times other 2 times
+
+#Registered Patient List
+
+1. On Age and Blood group Search Parameter input got a browser level warning
+2. On Edit Sevaral time warning
+3. Edit Not working
+
+#Patient Appointment
+
+1. On Pay Bill Now page load endlessly
+2.On a Doctor appointment duplicate several time

@@ -1,0 +1,52 @@
+<link href="{{ asset('node_modules/datatables/media/css/jquery.dataTables.css') }}" rel="stylesheet">
+<table class="table data-table table-bordered table-hover table-striped">
+    <thead class="bg-primary">
+        <tr>
+            <th class="text-center">SL#</th>
+            <th class="text-center">PO</th>
+            <th class="text-center">PO Date</th>
+            <th class="text-center">Supplier Name</th>
+            <th class="text-center">Item Code</th>
+            <th class="text-center">Item Name</th>
+            <th class="text-center">Rate</th>
+            <th class="text-center">Quantity</th>
+            <th class="text-center">Status</th>
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @if (!empty($supplierwisePoItemDetails))
+            @foreach ($supplierwisePoItemDetails as $data)
+                <tr>
+                    <td class="text-center">{{ $loop->iteration }}</td>
+                    <td class="text-center">{{ $data->purchase_uid }}</td>
+                    <td class="text-center">{{ date('d-m-Y', strtotime($data->purchase_date)) }}</td>
+                    <td class="text-left">{{ $data->supplier_name }}</td>
+                    <td class="text-left">{{ $data->item_code }}</td>
+                    <td class="text-left">{{ $data->item_name }}</td>
+                    <td class="text-center">{{ $data->item_rate }}</td>
+                    <td class="text-center">{{ $data->approved_qty }}</td>
+                    <td class="text-left">{{ $data->po_status }}</td>
+
+                </tr>
+            @endforeach
+        @endif
+    </tbody>
+</table>
+
+
+<script type="application/javascript"
+src="{{ asset('node_modules/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+<script>
+    $('.data-table').DataTable({
+        "lengthMenu": [
+            [50],
+            [50]
+        ],
+        "ordering": false,
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bAutoWidth": false
+    });
+</script>

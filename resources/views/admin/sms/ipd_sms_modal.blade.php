@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="{{ asset('node_modules/select2/dist/css/select2.min.css') }}">
+@php
+$param_arr = explode('_', $param);
+$company_profile = \App\Models\Company::where('status', 1)->first();
+$company_name = isset($company_profile->hospital_name_bangla) ? $company_profile->hospital_name_bangla : $company_profile->hospital_name;
+$company_number = isset($company_profile->telephone1) ? $company_profile->telephone1 : '01700000000';
+
+@endphp
+<form action="{{ route('send-ipd-custom-sms') }}" method="post" id="grant-service-form-create">
+    @csrf
+    <div class="form-group row">
+        <label for="grantuser_department" class="col-sm-12 col-form-label col-form-label-sm">Patient Name <span
+                class="text-danger"></span></label>
+        <div class="col-sm-12">
+            <input type="text" class="form-control" name="" value="{{ isset($param_arr[2]) ? $param_arr[2] : '' }}">
+        </div>
+        <div class="col-sm-12">
+            <input type="hidden" class="form-control" name="id" value="{{ isset($param_arr[0]) ? $param_arr[0] : '' }}">
+            <input type="hidden" class="form-control" name="sms" value="1">
+        </div>
+
+        <label for="grantuser_user" class="col-sm-12 col-form-label col-form-label-sm">Doctor Name <span
+                class="text-danger"></span></label>
+        <div class="col-sm-12">
+            <input type="text" class="form-control" value="{{ isset($param_arr[3]) ? $param_arr[3] : '' }}">
+
+        </div>
+        <label for="mobile_num" class="col-sm-12 col-form-label col-form-label-sm">Patient Number<span
+                class="text-danger"></span></label>
+        <div class="col-sm-12">
+            <input type="text" class="form-control" name="mobile_num"
+                value="{{ isset($param_arr[1]) ? $param_arr[1] : '' }}">
+        </div>
+        <label for="grantuser_user" class="col-sm-12 col-form-label col-form-label-sm">SMS Preview<span
+                class="text-danger"></span></label>
+        <div class="col-sm-12">
+            <textarea id="" cols="30" rows="10" class="form-control" name="message_body">আসসালামুআলাইকুম,আপনাকে স্বাগত | রোগী {{ isset($param_arr[2]) ? $param_arr[2] : '' }} এর চিকিৎসা খরচ {{ isset($param_arr[5]) ? $param_arr[5] : '' }} টাকা | জমা হয়েছে {{ isset($param_arr[4]) ? $param_arr[4] : '' }} টাকা | অনুগ্রহ করে অতি শীঘ্র বিল টি পরিশোধ করার জন্য অনুরোধ করা হচ্ছে  |  {{ $company_name  }}। প্রয়োজনেঃ {{ $company_number }}
+            </textarea>
+        </div>
+    </div>
+
+
+    <div class="modal-footer pl-0">
+        @php
+            $response_action = route('idp.ipd-business-office');
+        @endphp
+        <button class="btn btn-success btn-md"
+            onclick="btnSaveUpdate(this,'','','','', dynamicFunc.afterSaveLoadPage,'{{ $response_action }}')">
+            Send SMS
+        </button>
+
+        <button type="reset" class="btn btn-info btn-md" title="Click here to Clear form data">Clear</button>
+        <a href="{{ route('serviceunit.grant-service-unit-to-user') }}" type="reset" class="btn btn-danger btn-md"
+            title="Click here to Clear form data">Exit</a>
+
+    </div>
+</form>
+
+
+
+<script type="application/javascript" src="{{ asset('node_modules/select2/dist/js/select2.min.js') }}"></script>
+<script>
+    // getDropdownListByCondition("#","","");
+    $('.select2').select2({});
+</script>

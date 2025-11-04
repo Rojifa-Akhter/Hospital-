@@ -1,0 +1,2848 @@
+@media screen and (max-width: 1799px) {
+
+}
+@media screen and (max-width: 1599px) {
+
+}
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 1399px) {
+    .btn-transparent {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    .section_title_area{
+        margin-bottom: 28px !important;
+    }
+
+
+
+    .section_title2::before {
+        left: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+    .section_title2::after {
+        right: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+
+    /*==================================================*/
+    .qa_bar {
+        background-color: #25B671;
+        padding: 10px;
+    }
+    .qa-left {
+        text-align: left;
+        color: #fff;
+    }
+
+    .qa_phone {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .qa_email {
+        font-size: 16px;
+    }
+
+    .qa-right {
+        text-align: right;
+    }
+
+    .qa_signin_signup {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .qa_fev_cart {
+        font-size: 16px;
+    }
+
+    /*==========================================*/
+    .navbar-brand{
+        width: 40px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 1.5rem 0.5rem !important;
+    }
+
+    /*==========================================*/
+
+    .full_slider {
+        padding: 100px 0px;
+        min-height: auto;
+    }
+
+    .social_links ul {
+        left: -40px;
+    }
+
+    /*==========================================*/
+    .about_us {
+        padding: 100px 0px;
+    }
+
+
+    .aboutus_video a {
+        height: 70px;
+        width: 70px;
+        font-size: 25px;
+        line-height: 70px;
+        padding-left: 4px;
+        padding-top: 0px;
+    }
+
+
+    .section_title::before {
+        bottom: -7px;
+        height: 3px;
+        width: 50px;
+    }
+
+    .about_us_section p{
+        font-size: 14px;
+    }
+
+    .theme_list_item li {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    /*==========================================*/
+    .working_area {
+        padding-bottom: 25px;
+    }
+
+    .card_image {
+        border-bottom: 2px solid #025730;
+    }
+    .dept_name {
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        bottom: -17px;
+        line-height: 1;
+    }
+
+    .dept_details {
+        font-size: 14px;
+    }
+    /*==========================================*/
+    .expert_doctors {
+        padding: 45px 0px;
+    }
+    .specialist_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .specialist_categories ul li{
+        display: block;
+    }
+    .specialist_categories ul li a {
+        font-size: 18px;
+    }
+
+    .expert_doctor_image .doctor_country span {
+        font-size: 14px;
+    }
+    .btn-expert-appointment {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .expert-doctor-info{
+        margin-top: 10px;
+    }
+    .expert-doctor-info .doctor_name{
+        font-size: 22px;
+        text-align: left;
+    }
+    .doctor_speciality {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .expert-doctor-info .rating{
+        text-align: left;
+    }
+
+    .expert_doctor_degree {
+        font-size: 14px;
+        color: #025730;
+        text-align: left;
+    }
+
+    .expert_doctor_details {
+        font-size: 14px;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .expert_doctor_form input {
+        height: 36px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .expert_doctor_fees {
+        font-size: 16px;
+    }
+
+    .expert_doctor_image .doctor_country {
+        top: 160px;
+    }
+    /*==========================================*/
+    .doctor_appointment_area {
+        padding: 45px 0;
+        overflow: hidden;
+    }
+
+    fieldset .form-card {
+        min-height: 630px;
+        margin-top: 0px !important;
+    }
+    #progressbar{
+        display: none;
+    }
+
+    .instraction_for_appointment {
+        margin: 20px 0;
+    }
+
+    .form_title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    .doctor_des {
+        font-size: 12px;
+    }
+
+    .doctor_card .doctor_img {
+        width: 190px;
+        margin-right: 00px;
+        margin: auto;
+        text-align: center;
+    }
+    .doctor_select_btn .btn{
+        width: 100% !important;
+        display: block!important;
+        margin-top: 15px;
+    }
+
+    /*==========================================*/
+    .why_choose_us {
+        padding: 45px 0px;
+    }
+
+    .choose_us_text {
+        padding-right: 0px;
+    }
+    .choose_us_text p {
+        font-size: 16px;
+    }
+
+    .counter {
+        margin-top: 25px;
+    }
+
+    .full_counter .counter h3 {
+        font-size: 26px;
+    }
+
+    .choose_us_blocks .block {
+        margin-top: 15px;
+    }
+    /*==========================================*/
+
+    .how_mcare_works {
+        padding: 100px 0px;
+    }
+
+    .how_mcare_works_text p{
+        font-size: 14px;
+    }
+
+    .how_mcare_works img{
+        margin-top: 15px;
+    }
+    /*==========================================*/
+    .download_app {
+        background-color: #27B471;
+        padding:100px 0;
+    }
+
+    .download_app .device_text h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .download_app .device_text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .store_logo{
+        text-align: center;
+    }
+    .store_logo img{
+        margin: 3px 0px;
+    }
+
+    /*==========================================*/
+    .e-pharmacy {
+        padding: 45px 0;
+    }
+
+    .e-pharmacy .product_categories ul {
+        margin-bottom: 10px;
+    }
+
+    /*==========================================*/
+    .testimonials_area {
+        padding: 45px 0px;
+    }
+
+    .testimonials_text span {
+        margin-bottom: 15px;
+    }
+
+    .testimonials_text p {
+        font-size: 14px;
+        width: auto;
+        margin: auto;
+    }
+
+    /*==========================================*/
+    .contactimg_section img {
+        min-height: auto;
+    }
+
+    .contact_title {
+        font-size: 26px;
+    }
+
+    .contact_section {
+        padding-bottom: 15px;
+    }
+
+    .contact_area .btn-theme{
+        display: block;
+        width: 100%;
+    }
+    /*==========================================*/
+
+    .top_footer {
+        padding: 100px 0px;
+    }
+}
+@media screen and (max-width: 1299px) {
+
+}
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 1199px) {
+
+}
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 991px) {
+    .btn-theme {
+        padding: 6px 22px;
+        border: 1px solid #25b671;
+        font-size: 14px;
+    }
+
+    .btn-transparent {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    .section_title_area{
+        margin-bottom: 28px !important;
+    }
+
+    .section_title2 {
+        font-size: 33px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .sub_title {
+        font-size: 13px;
+        width: 450px;
+        margin: auto;
+    }
+
+    .section_title2::before {
+        left: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+    .section_title2::after {
+        right: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+
+    /*==================================================*/
+    .qa_bar {
+        background-color: #25B671;
+        padding: 10px;
+    }
+    .qa-left {
+        text-align: center;
+        color: #fff;
+    }
+
+    .qa_phone {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .qa_email {
+        font-size: 14px;
+    }
+
+    .qa-right {
+        text-align: center;
+    }
+
+    .qa_signin_signup {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .qa_fev_cart {
+        font-size: 14px;
+    }
+
+    /*==========================================*/
+
+    .navbar {
+        padding: 0.5rem;
+    }
+    .navbar-brand{
+        width: 40px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: .5rem 0.5rem !important;
+    }
+
+    /*==========================================*/
+    .slider-text h1 {
+        font-size: 33px;
+        width: auto;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .slider-text .btn-theme{
+        margin-top: 10px!important;
+        padding: 7px 20px;
+        border: 1px solid #25b671;
+        font-size: 12px;
+        margin-right: 5px !important;
+    }
+
+    .full_slider {
+        padding: 45px 0px;
+        min-height: auto;
+    }
+
+    .social_links ul {
+        display: none;
+    }
+    /*==========================================*/
+    .about_us {
+        padding: 45px 0px;
+    }
+
+    .aboutus_video {
+        min-height: 215px;
+        margin-bottom: 25px;
+    }
+
+    .aboutus_video a {
+        height: 70px;
+        width: 70px;
+        font-size: 25px;
+        line-height: 70px;
+        padding-left: 4px;
+        padding-top: 0px;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+
+    .section_title::before {
+        bottom: -7px;
+        height: 3px;
+        width: 50px;
+    }
+
+    .small_section_title {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+
+    .about_us_section p{
+        font-size: 14px;
+    }
+
+    .theme_list_item li {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    /*==========================================*/
+    .working_area {
+        padding-bottom: 25px;
+    }
+
+    .card_image {
+        border-bottom: 2px solid #025730;
+    }
+    .dept_name {
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        bottom: -17px;
+        line-height: 1;
+    }
+
+    .dept_details {
+        font-size: 14px;
+    }
+    /*==========================================*/
+    .expert_doctors {
+        padding: 45px 0px;
+    }
+    .specialist_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .specialist_categories ul li{
+        display: block;
+    }
+    .specialist_categories ul li a {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .expert_doctor_image .doctor_country span {
+        font-size: 14px;
+    }
+    .btn-expert-appointment {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .expert-doctor-info{
+        margin-top: 10px;
+    }
+    .expert-doctor-info .doctor_name{
+        font-size: 22px;
+        text-align: left;
+    }
+    .doctor_speciality {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .expert-doctor-info .rating{
+        text-align: left;
+    }
+
+    .expert_doctor_degree {
+        font-size: 14px;
+        color: #025730;
+        text-align: left;
+    }
+
+    .expert_doctor_details {
+        font-size: 14px;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .expert_doctor_form input {
+        height: 36px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .expert_doctor_fees {
+        font-size: 16px;
+    }
+
+    .expert_doctor_image .doctor_country {
+        top: 160px;
+    }
+    /*==========================================*/
+    .doctor_appointment_area {
+        padding: 45px 0;
+        overflow: hidden;
+    }
+
+    fieldset .form-card {
+        min-height: 630px;
+        margin-top: 0px !important;
+    }
+    #progressbar{
+        display: none;
+    }
+
+    .instraction_for_appointment {
+        margin: 20px 0;
+    }
+
+    .form_title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    fieldset .doctor_card{
+        display: flex!important;
+    }
+    fieldset .doctor_card .info_select {
+        display: block!important;
+    }
+
+    fieldset .doctor_card .doctor_info {
+        text-align: left;
+    }
+    .doctor_card .doctor_info h4 {
+        font-size: 18px;
+    }
+    .doctor_card .doctor_info p {
+        font-size: 12px;
+    }
+
+    .doctor_des {
+        font-size: 12px;
+    }
+
+    .doctor_card .doctor_img {
+        width: 190px;
+        margin-right: 00px;
+        margin: auto;
+        text-align: center;
+    }
+    .doctor_select_btn .btn{
+        width: 100% !important;
+        display: block!important;
+        margin-top: 15px;
+    }
+
+    /*==========================================*/
+    .why_choose_us {
+        padding: 45px 0px;
+    }
+
+    .choose_us_text {
+        padding-right: 0px;
+    }
+    .choose_us_text p {
+        font-size: 12px;
+    }
+
+    .counter {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .full_counter .counter h3 {
+        font-size: 26px;
+    }
+
+    .choose_us_blocks .block {
+        margin-top: 15px;
+    }
+    /*==========================================*/
+
+    .how_mcare_works {
+        padding: 45px 0px;
+    }
+
+    .how_mcare_works_text p{
+        font-size: 14px;
+    }
+
+    .how_mcare_works img{
+        margin-top: 15px;
+    }
+    /*==========================================*/
+    .download_app {
+        background-color: #27B471;
+        padding: 45px 0;
+    }
+
+    .download_app .device_image {
+        width: auto;
+    }
+
+    .download_app .device_text h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .download_app .device_text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .store_logo{
+        text-align: center;
+    }
+    .store_logo img{
+        margin: 3px 0px;
+    }
+
+    /*==========================================*/
+    .e-pharmacy {
+        padding: 45px 0;
+    }
+
+    .e-pharmacy .product_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .e-pharmacy .product_categories ul li{
+        display: inline-block;
+    }
+    .e-pharmacy .product_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    /*==========================================*/
+    .testimonials_area {
+        padding: 45px 0px;
+    }
+
+    .testimonials_text span {
+        margin-bottom: 15px;
+    }
+
+    .testimonials_text p {
+        font-size: 14px;
+        width: auto;
+        margin: auto;
+    }
+
+    /*==========================================*/
+    .contactimg_section img {
+        min-height: auto;
+    }
+
+    .contact-box {
+        width: auto;
+        min-height: 160px;
+        margin-left: auto;
+        margin-top: -17px;
+        margin-bottom: 40px;
+    }
+
+    .contact_title {
+        font-size: 26px;
+    }
+
+    .contact_section {
+        padding-bottom: 15px;
+    }
+
+    .contact_area .btn-theme{
+        display: block;
+        width: 100%;
+    }
+    /*==========================================*/
+    .emergency_contact i.fa-phone-alt {
+        display: none;
+    }
+
+    .emergency_contact i.fa-envelope {
+        display: none;
+    }
+    .emergency_contact {
+        padding: 10px 0px;
+        border-radius: 10px;
+        margin-top: -80px;
+    }
+    .emergency_contact h4 {
+        font-size: 14px;
+    }
+    .emergency_contact p {
+        font-size: 14px;
+    }
+
+    .emergency_contact_or {
+        font-size: 18px;
+    }
+
+    .top_footer {
+        padding: 45px 0px;
+        text-align: center;
+    }
+
+    .footer_title {
+        display: inline-block;
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul li {
+        padding: 5px 0;
+    }
+
+    /*==========================================*/
+    /*Doctor page*/
+    /*==========================================*/
+
+    .find_doctors {
+        padding: 45px 0px;
+    }
+
+    .find_doctors h2{
+        font-size: 22px;
+    }
+
+    .our_popular_doctors {
+        padding: 45px 0px;
+    }
+
+    .popular_doctor_infos .doctor_speciality{
+        text-align: left;
+    }
+
+    .doctor_name {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .btn-theme2 {
+        padding: 8px 8px;
+    }
+}
+
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 767px) {
+    .btn-theme {
+        padding: 6px 22px;
+        border: 1px solid #25b671;
+        font-size: 14px;
+    }
+
+    .btn-transparent {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    .section_title_area{
+        margin-bottom: 8px !important;
+    }
+
+    .section_title2 {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+    }
+
+    .sub_title {
+        font-size: 12px;
+        width: auto;
+        margin: auto;
+    }
+
+    .section_title2::before {
+        left: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+    .section_title2::after {
+        right: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+
+    /*==================================================*/
+    .qa_bar {
+        background-color: #25B671;
+        padding: 10px;
+    }
+    .qa-left {
+        text-align: center;
+        color: #fff;
+    }
+
+    .qa_phone {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .qa_email {
+        font-size: 14px;
+    }
+
+    .qa-right {
+        text-align: center;
+    }
+
+    .qa_signin_signup {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .qa_fev_cart {
+        font-size: 14px;
+    }
+
+    /*==========================================*/
+
+    .navbar {
+        padding: 0.5rem;
+    }
+    .navbar-brand{
+        width: 40px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: .5rem 0.5rem !important;
+    }
+
+    /*==========================================*/
+    .slider-text h1 {
+        font-size: 33px;
+        width: auto;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .slider-text .btn-theme{
+        margin-top: 10px!important;
+        padding: 7px 20px;
+        border: 1px solid #25b671;
+        font-size: 12px;
+        margin-right: 5px !important;
+    }
+
+    .full_slider {
+        padding: 45px 0px;
+        min-height: auto;
+    }
+
+    .social_links ul {
+        display: none;
+    }
+    /*==========================================*/
+    .about_us {
+        padding: 45px 0px;
+    }
+
+    .aboutus_video {
+        min-height: 215px;
+        margin-bottom: 25px;
+    }
+
+    .aboutus_video a {
+        height: 70px;
+        width: 70px;
+        font-size: 25px;
+        line-height: 70px;
+        padding-left: 4px;
+        padding-top: 0px;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+
+    .section_title::before {
+        bottom: -7px;
+        height: 3px;
+        width: 50px;
+    }
+
+    .small_section_title {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+
+    .about_us_section p{
+        font-size: 14px;
+    }
+
+    .theme_list_item li {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    /*==========================================*/
+    .working_area {
+        padding-bottom: 25px;
+    }
+
+    .card_image {
+        border-bottom: 2px solid #025730;
+    }
+    .dept_name {
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        bottom: -17px;
+        line-height: 1;
+    }
+
+    .dept_details {
+        font-size: 14px;
+    }
+    /*==========================================*/
+    .expert_doctors {
+        padding: 45px 0px;
+    }
+    .specialist_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .specialist_categories ul li{
+        display: inline-block;
+    }
+    .specialist_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    .expert_doctor_image .doctor_country span {
+        font-size: 14px;
+    }
+    .btn-expert-appointment {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .expert-doctor-info{
+        margin-top: 10px;
+    }
+    .expert-doctor-info .doctor_name{
+        font-size: 22px;
+        text-align: center;
+    }
+    .doctor_speciality {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .expert-doctor-info .rating{
+        text-align: center;
+    }
+
+    .expert_doctor_degree {
+        font-size: 14px;
+        color: #025730;
+        text-align: center;
+    }
+
+    .expert_doctor_details {
+        font-size: 14px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .expert_doctor_form input {
+        height: 50px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .expert_doctor_fees {
+        font-size: 16px;
+    }
+    /*==========================================*/
+    .doctor_appointment_area {
+        padding: 45px 0;
+        overflow: hidden;
+    }
+
+    fieldset .form-card {
+        min-height: 630px;
+        margin-top: 0px !important;
+    }
+    #progressbar{
+        display: none;
+    }
+
+    .instraction_for_appointment {
+        margin: 20px 0;
+    }
+
+    .form_title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    fieldset .doctor_card{
+        display: block!important;
+    }
+    fieldset .doctor_card .info_select {
+        display: block!important;
+    }
+
+    fieldset .doctor_card .doctor_info {
+        text-align: center;
+    }
+    .doctor_card .doctor_img {
+        width: 190px;
+        margin-right: 00px;
+        margin: auto;
+        text-align: center;
+    }
+    .doctor_select_btn .btn{
+        width: 100% !important;
+        display: block!important;
+        margin-top: 15px;
+    }
+
+    /*==========================================*/
+    .why_choose_us {
+        padding: 45px 0px;
+    }
+
+    .choose_us_text {
+        padding-right: 0px;
+    }
+    .choose_us_text p {
+        font-size: 12px;
+    }
+
+    .counter {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .full_counter .counter h3 {
+        font-size: 26px;
+    }
+
+    .choose_us_blocks .block {
+        margin-top: 30px;
+    }
+    /*==========================================*/
+
+    .how_mcare_works {
+        padding: 45px 0px;
+    }
+
+    .how_mcare_works_text p{
+        font-size: 14px;
+    }
+
+    .how_mcare_works img{
+        margin-top: 15px;
+    }
+    /*==========================================*/
+    .download_app {
+        background-color: #27B471;
+        padding: 45px 0;
+    }
+
+    .download_app .device_image {
+        width: auto;
+    }
+
+    .download_app .device_text h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .download_app .device_text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .store_logo{
+        text-align: center;
+    }
+    .store_logo img{
+        margin: 3px 0px;
+    }
+
+    /*==========================================*/
+    .e-pharmacy {
+        padding: 45px 0;
+    }
+
+    .e-pharmacy .product_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .e-pharmacy .product_categories ul li{
+        display: inline-block;
+    }
+    .e-pharmacy .product_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    /*==========================================*/
+    .testimonials_area {
+        padding: 45px 0px;
+    }
+
+    .testimonials_text span {
+        margin-bottom: 15px;
+    }
+
+    .testimonials_text p {
+        font-size: 14px;
+        width: auto;
+        margin: auto;
+    }
+
+    /*==========================================*/
+    .contactimg_section img {
+        min-height: auto;
+    }
+
+    .contact-box {
+        width: auto;
+        min-height: 160px;
+        margin-left: auto;
+        margin-top: -17px;
+        margin-bottom: 40px;
+    }
+
+    .contact_title {
+        font-size: 26px;
+    }
+
+    .contact_section {
+        padding-bottom: 15px;
+    }
+
+    .contact_area .btn-theme{
+        display: block;
+        width: 100%;
+    }
+    /*==========================================*/
+    .emergency_contact i.fa-phone-alt {
+        display: none;
+    }
+
+    .emergency_contact i.fa-envelope {
+        display: none;
+    }
+    .emergency_contact {
+        padding: 10px 0px;
+        border-radius: 10px;
+        margin-top: -80px;
+    }
+    .emergency_contact h4 {
+        font-size: 14px;
+    }
+    .emergency_contact p {
+        font-size: 14px;
+    }
+
+    .emergency_contact_or {
+        font-size: 18px;
+    }
+
+    .top_footer {
+        padding: 45px 0px;
+        text-align: center;
+    }
+
+    .footer_title {
+        display: inline-block;
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul li {
+        padding: 5px 0;
+    }
+
+
+    /*==========================================*/
+    /*Doctor page*/
+    /*==========================================*/
+
+    .find_doctors {
+        padding: 45px 0px;
+    }
+
+    .find_doctors h2{
+        font-size: 22px;
+    }
+
+    .our_popular_doctors {
+        padding: 45px 0px;
+    }
+
+    .popular_doctor_infos .doctor_speciality{
+        text-align: left;
+    }
+
+    .doctor_name {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .btn-theme2 {
+        padding: 8px 8px;
+    }
+
+}
+
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 575px) {
+   .btn-theme {
+    padding: 6px 22px;
+    border: 1px solid #25b671;
+    font-size: 14px;
+}
+
+.btn-transparent {
+    padding: 8px 24px;
+    font-size: 14px;
+}
+
+.section_title_area{
+    margin-bottom: 8px !important;
+}
+
+.section_title2 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.sub_title {
+    font-size: 12px;
+    width: auto;
+    margin: auto;
+}
+
+.section_title2::before {
+    left: -40px;
+    height: 3px;
+    width: 33px;
+}
+
+.section_title2::after {
+    right: -40px;
+    height: 3px;
+    width: 33px;
+}
+
+
+.hero_section {
+    padding: 90px 0;
+}
+
+.hero_text h1 {
+    font-size: 40px;
+}
+
+.hero_text b{
+    font-size: 16px;
+}
+
+.hero_text b span {
+    font-size: 16px;
+}
+
+
+
+/*==================================================*/
+.qa_bar {
+    background-color: #25B671;
+    padding: 10px;
+}
+.qa-left {
+    text-align: center;
+    color: #fff;
+}
+
+.qa_phone {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.qa_email {
+    font-size: 14px;
+}
+
+.qa-right {
+    text-align: center;
+}
+
+.qa_signin_signup {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.qa_fev_cart {
+    font-size: 14px;
+}
+
+/*==========================================*/
+
+.navbar {
+    padding: 0.5rem;
+}
+.navbar-brand{
+    width: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 12px;
+    padding: .5rem 0.5rem !important;
+}
+
+/*==========================================*/
+.slider-text{
+    text-align: center;
+}
+.slider-image{
+    display: none;
+}
+.slider-text h1 {
+    font-size: 43px;
+    width: auto;
+    text-align: center;
+    line-height: 1;
+}
+
+.slider-text p {
+    font-size: 14px;
+    margin-top: 10px;
+    width: auto;
+}
+
+.slider-text .btn-theme{
+    margin-top: 10px!important;
+    padding: 7px 20px;
+    border: 1px solid #25b671;
+    font-size: 12px;
+    margin-right: 5px !important;
+}
+
+.full_slider {
+    padding: 45px 0px;
+    min-height: auto;
+}
+
+.social_links ul {
+    display: none;
+}
+/*==========================================*/
+.about_us {
+    padding: 45px 0px;
+}
+
+.aboutus_video {
+    min-height: 215px;
+    margin-bottom: 25px;
+}
+
+.aboutus_video a {
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    line-height: 70px;
+    padding-left: 4px;
+    padding-top: 0px;
+}
+
+.section_title {
+    font-size: 28px;
+}
+
+.section_title::before {
+    bottom: -7px;
+    height: 3px;
+    width: 50px;
+}
+
+.small_section_title {
+    font-size: 12px;
+    padding: 7px 16px;
+}
+
+.about_us_section p{
+    font-size: 14px;
+}
+
+.theme_list_item li {
+    font-size: 14px;
+    margin: 10px 0;
+}
+/*==========================================*/
+.working_area {
+    padding-bottom: 25px;
+}
+
+.card_image {
+    border-bottom: 2px solid #025730;
+}
+.dept_name {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: -17px;
+    line-height: 1;
+}
+
+.dept_details {
+    font-size: 14px;
+}
+/*==========================================*/
+.expert_doctors {
+    padding: 45px 0px;
+}
+.specialist_categories ul {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.specialist_categories ul li{
+    display: inline-block;
+}
+.specialist_categories ul li a {
+    font-size: 12px;
+    padding: 10px 10px;
+}
+
+.expert_doctor_image .doctor_country span {
+    font-size: 14px;
+}
+.btn-expert-appointment {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.expert-doctor-info{
+    margin-top: 10px;
+}
+.expert-doctor-info .doctor_name{
+    font-size: 22px;
+    text-align: center;
+}
+.doctor_speciality {
+    font-size: 14px;
+    text-align: center;
+}
+
+.expert-doctor-info .rating{
+    text-align: center;
+}
+
+.expert_doctor_degree {
+    font-size: 14px;
+    color: #025730;
+    text-align: center;
+}
+
+.expert_doctor_details {
+    font-size: 14px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.expert_doctor_form input {
+    height: 50px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.expert_doctor_fees {
+    font-size: 16px;
+}
+/*==========================================*/
+.doctor_appointment_area {
+    padding: 45px 0;
+    overflow: hidden;
+}
+
+fieldset .form-card {
+    min-height: 630px;
+    margin-top: 0px !important;
+}
+#progressbar{
+    display: none;
+}
+
+.instraction_for_appointment {
+    margin: 20px 0;
+}
+
+.form_title {
+    font-size: 16px;
+    text-align: center;
+}
+
+fieldset .doctor_card{
+    display: block!important;
+}
+fieldset .doctor_card .info_select {
+    display: block!important;
+}
+
+fieldset .doctor_card .doctor_info {
+    text-align: center;
+}
+.doctor_card .doctor_img {
+    width: 190px;
+    margin-right: 00px;
+    margin: auto;
+    text-align: center;
+}
+.doctor_select_btn .btn{
+    width: 100% !important;
+    display: block!important;
+    margin-top: 15px;
+}
+
+/*==========================================*/
+.why_choose_us {
+    padding: 45px 0px;
+}
+
+.choose_us_text {
+    padding-right: 0px;
+}
+.choose_us_text p {
+    font-size: 12px;
+}
+
+.counter {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.full_counter .counter h3 {
+    font-size: 26px;
+}
+
+.choose_us_blocks .block {
+    margin-top: 15px;
+}
+/*==========================================*/
+
+.how_mcare_works {
+    padding: 45px 0px;
+}
+
+.how_mcare_works_text p{
+    font-size: 14px;
+}
+
+.how_mcare_works img{
+    margin-top: 15px;
+}
+/*==========================================*/
+.download_app {
+    background-color: #27B471;
+    padding: 45px 0;
+}
+
+.download_app .device_image {
+    width: auto;
+}
+
+.download_app .device_text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download_app .device_text p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.store_logo{
+    text-align: center;
+}
+.store_logo img{
+    margin: 3px 0px;
+}
+
+/*==========================================*/
+.e-pharmacy {
+    padding: 45px 0;
+}
+
+.e-pharmacy .product_categories ul {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.e-pharmacy .product_categories ul li{
+    display: inline-block;
+}
+.e-pharmacy .product_categories ul li a {
+    font-size: 12px;
+    padding: 10px 10px;
+}
+/*==========================================*/
+.testimonials_area {
+    padding: 45px 0px;
+}
+
+.testimonials_text span {
+    margin-bottom: 15px;
+}
+
+.testimonials_text p {
+    font-size: 14px;
+    width: auto;
+    margin: auto;
+}
+
+/*==========================================*/
+.contactimg_section img {
+    min-height: auto;
+}
+
+.contact-box {
+    width: auto;
+    min-height: 160px;
+    margin-left: auto;
+    margin-top: -17px;
+    margin-bottom: 40px;
+}
+
+.contact_title {
+    font-size: 26px;
+}
+
+.contact_section {
+    padding-bottom: 15px;
+}
+
+.contact_area .btn-theme{
+    display: block;
+    width: 100%;
+}
+/*==========================================*/
+.emergency_contact i.fa-phone-alt {
+    display: none;
+}
+
+.emergency_contact i.fa-envelope {
+    display: none;
+}
+.emergency_contact {
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-top: -80px;
+}
+.emergency_contact h4 {
+    font-size: 14px;
+}
+.emergency_contact p {
+    font-size: 14px;
+}
+
+.emergency_contact_or {
+    font-size: 18px;
+}
+
+.top_footer {
+    padding: 45px 0px;
+    text-align: center;
+}
+
+.footer_title {
+    display: inline-block;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul li {
+    padding: 5px 0;
+}
+
+/*==========================================*/
+/*Doctor page*/
+/*==========================================*/
+
+.find_doctors {
+    padding: 45px 0px;
+}
+
+.find_doctors h2{
+    font-size: 22px;
+}
+
+.our_popular_doctors {
+    padding: 45px 0px;
+}
+
+.popular_doctor_infos .doctor_speciality{
+    text-align: left;
+}
+
+.doctor_name {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+}
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 491px) {
+    .btn-theme {
+        padding: 6px 22px;
+        border: 1px solid #25b671;
+        font-size: 14px;
+    }
+
+    .btn-transparent {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    .section_title_area{
+        margin-bottom: 8px !important;
+    }
+
+    .section_title2 {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+    }
+
+    .sub_title {
+        font-size: 12px;
+        width: auto;
+        margin: auto;
+    }
+
+    .section_title2::before {
+        left: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+    .section_title2::after {
+        right: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+
+    .hero_section {
+        padding: 60px 0;
+    }
+
+    .hero_text h1 {
+        font-size: 36px;
+    }
+
+    .hero_text b{
+        font-size: 14px;
+    }
+
+    .hero_text b span {
+        font-size: 14px;
+    }
+
+    .hero_text h1 {
+        font-size: 34px;
+    }
+    .hero_text b {
+        font-size: 14px;
+    }
+    .hero_text b span {
+        font-size: 14px;
+    }
+
+
+
+    /*==================================================*/
+    .qa_bar {
+        background-color: #25B671;
+        padding: 10px;
+    }
+    .qa-left {
+        text-align: center;
+        color: #fff;
+    }
+
+    .qa_phone {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .qa_email {
+        font-size: 14px;
+    }
+
+    .qa-right {
+        text-align: center;
+    }
+
+    .qa_signin_signup {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .qa_fev_cart {
+        font-size: 14px;
+    }
+
+    /*==========================================*/
+
+    .navbar {
+        padding: 0.5rem;
+    }
+    .navbar-brand{
+        width: 40px;
+    }
+
+    /*==========================================*/
+    .slider-text h1 {
+        font-size: 33px;
+        width: auto;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .slider-text .btn-theme{
+        margin-top: 10px!important;
+        padding: 7px 20px;
+        border: 1px solid #25b671;
+        font-size: 12px;
+        margin-right: 5px !important;
+    }
+
+    .full_slider {
+        padding: 45px 0px;
+    }
+
+    .social_links ul {
+        display: none;
+    }
+    /*==========================================*/
+    .about_us {
+        padding: 45px 0px;
+    }
+
+    .aboutus_video {
+        min-height: 215px;
+        margin-bottom: 25px;
+    }
+
+    .aboutus_video a {
+        height: 70px;
+        width: 70px;
+        font-size: 25px;
+        line-height: 70px;
+        padding-left: 4px;
+        padding-top: 0px;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+
+    .section_title::before {
+        bottom: -7px;
+        height: 3px;
+        width: 50px;
+    }
+
+    .small_section_title {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+
+    .about_us_section p{
+        font-size: 14px;
+    }
+
+    .theme_list_item li {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    /*==========================================*/
+    .working_area {
+        padding-bottom: 25px;
+    }
+
+    .card_image {
+        border-bottom: 2px solid #025730;
+    }
+    .dept_name {
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        bottom: -17px;
+        line-height: 1;
+    }
+
+    .dept_details {
+        font-size: 14px;
+    }
+    /*==========================================*/
+    .expert_doctors {
+        padding: 45px 0px;
+    }
+    .specialist_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .specialist_categories ul li{
+        display: inline-block;
+    }
+    .specialist_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    .expert_doctor_image .doctor_country span {
+        font-size: 14px;
+    }
+    .btn-expert-appointment {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .expert-doctor-info{
+        margin-top: 10px;
+    }
+    .expert-doctor-info .doctor_name{
+        font-size: 22px;
+        text-align: center;
+    }
+    .doctor_speciality {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .expert-doctor-info .rating{
+        text-align: center;
+    }
+
+    .expert_doctor_degree {
+        font-size: 14px;
+        color: #025730;
+        text-align: center;
+    }
+
+    .expert_doctor_details {
+        font-size: 14px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .expert_doctor_form input {
+        height: 50px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .expert_doctor_fees {
+        font-size: 16px;
+    }
+    /*==========================================*/
+    .doctor_appointment_area {
+        padding: 45px 0;
+        overflow: hidden;
+    }
+
+    fieldset .form-card {
+        min-height: 630px;
+        margin-top: 0px !important;
+    }
+    #progressbar{
+        display: none;
+    }
+
+    .instraction_for_appointment {
+        margin: 20px 0;
+    }
+
+    .form_title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    fieldset .doctor_card{
+        display: block!important;
+    }
+    fieldset .doctor_card .info_select {
+        display: block!important;
+    }
+
+    fieldset .doctor_card .doctor_info {
+        text-align: center;
+    }
+    .doctor_card .doctor_img {
+        width: 190px;
+        margin-right: 00px;
+        margin: auto;
+        text-align: center;
+    }
+    .doctor_select_btn .btn{
+        width: 100% !important;
+        display: block!important;
+        margin-top: 15px;
+    }
+
+    /*==========================================*/
+    .why_choose_us {
+        padding: 45px 0px;
+    }
+
+    .choose_us_text {
+        padding-right: 0px;
+    }
+    .choose_us_text p {
+        font-size: 12px;
+    }
+
+    .counter {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .full_counter .counter h3 {
+        font-size: 26px;
+    }
+
+    .choose_us_blocks .block {
+        margin-top: 15px;
+    }
+    /*==========================================*/
+
+    .how_mcare_works {
+        padding: 45px 0px;
+    }
+
+    .how_mcare_works_text p{
+        font-size: 14px;
+    }
+
+    .how_mcare_works img{
+        margin-top: 15px;
+    }
+    /*==========================================*/
+    .download_app {
+        background-color: #27B471;
+        padding: 45px 0;
+    }
+
+    .download_app .device_image {
+        width: auto;
+    }
+
+    .download_app .device_text h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .download_app .device_text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .store_logo{
+        text-align: center;
+    }
+    .store_logo img{
+        margin: 3px 0px;
+    }
+
+    /*==========================================*/
+    .e-pharmacy {
+        padding: 45px 0;
+    }
+
+    .e-pharmacy .product_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .e-pharmacy .product_categories ul li{
+        display: inline-block;
+    }
+    .e-pharmacy .product_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    /*==========================================*/
+    .testimonials_area {
+        padding: 45px 0px;
+    }
+
+    .testimonials_text span {
+        margin-bottom: 15px;
+    }
+
+    .testimonials_text p {
+        font-size: 14px;
+        width: auto;
+        margin: auto;
+    }
+
+    /*==========================================*/
+    .contactimg_section img {
+        min-height: auto;
+    }
+
+    .contact-box {
+        width: auto;
+        min-height: 160px;
+        margin-left: auto;
+        margin-top: -17px;
+        margin-bottom: 40px;
+    }
+
+    .contact_title {
+        font-size: 26px;
+    }
+
+    .contact_section {
+        padding-bottom: 15px;
+    }
+
+    .contact_area .btn-theme{
+        display: block;
+        width: 100%;
+    }
+    /*==========================================*/
+    .emergency_contact i.fa-phone-alt {
+        display: none;
+    }
+
+    .emergency_contact i.fa-envelope {
+        display: none;
+    }
+    .emergency_contact {
+        padding: 10px 0px;
+        border-radius: 10px;
+        margin-top: -80px;
+    }
+    .emergency_contact h4 {
+        font-size: 14px;
+    }
+    .emergency_contact p {
+        font-size: 14px;
+    }
+
+    .emergency_contact_or {
+        font-size: 18px;
+    }
+
+    .top_footer {
+        padding: 45px 0px;
+        text-align: center;
+    }
+
+    .footer_title {
+        display: inline-block;
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul li {
+        padding: 5px 0;
+    }
+
+    /*==========================================*/
+    /*Doctor page*/
+    /*==========================================*/
+
+    .find_doctors {
+        padding: 45px 0px;
+    }
+
+    .find_doctors h2{
+        font-size: 22px;
+    }
+
+    .our_popular_doctors {
+        padding: 45px 0px;
+    }
+
+    .popular_doctor_infos .doctor_speciality{
+        text-align: left;
+    }
+
+    .doctor_name {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+}
+
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+/*======================================================================*/
+@media screen and (max-width: 300px) {
+    .btn-theme {
+        padding: 6px 22px;
+        border: 1px solid #25b671;
+        font-size: 14px;
+    }
+
+    .btn-transparent {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    .section_title_area{
+        margin-bottom: 8px !important;
+    }
+
+    .section_title2 {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+    }
+
+    .sub_title {
+        font-size: 12px;
+        width: auto;
+        margin: auto;
+    }
+
+    .section_title2::before {
+        left: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+    .section_title2::after {
+        right: -40px;
+        height: 3px;
+        width: 33px;
+    }
+
+    .hero_section {
+        padding: 45px 0;
+    }
+
+    .hero_text h1 {
+        font-size: 36px;
+    }
+
+    .hero_text b{
+        font-size: 14px;
+    }
+
+    .hero_text b span {
+        font-size: 14px;
+    }
+
+    .hero_text h1 {
+        font-size: 34px;
+    }
+    .hero_text b {
+        font-size: 14px;
+    }
+    .hero_text b span {
+        font-size: 14px;
+    }
+
+
+    /*==================================================*/
+    .qa_bar {
+        background-color: #25B671;
+        padding: 10px;
+    }
+    .qa-left {
+        text-align: center;
+        color: #fff;
+    }
+
+    .qa_phone {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .qa_email {
+        font-size: 14px;
+    }
+
+    .qa-right {
+        text-align: center;
+    }
+
+    .qa_signin_signup {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .qa_fev_cart {
+        font-size: 14px;
+    }
+
+    /*==========================================*/
+
+    .navbar {
+        padding: 0.5rem;
+    }
+    .navbar-brand{
+        width: 40px;
+    }
+
+    /*==========================================*/
+    .slider-text h1 {
+        font-size: 33px;
+        width: auto;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .slider-text .btn-theme{
+        margin-top: 10px!important;
+        padding: 7px 20px;
+        border: 1px solid #25b671;
+        font-size: 12px;
+        margin-right: 5px !important;
+    }
+
+    .full_slider {
+        padding: 45px 0px;
+    }
+
+    .social_links ul {
+        display: none;
+    }
+    /*==========================================*/
+    .about_us {
+        padding: 45px 0px;
+    }
+
+    .aboutus_video {
+        min-height: 215px;
+        margin-bottom: 25px;
+    }
+
+    .aboutus_video a {
+        height: 70px;
+        width: 70px;
+        font-size: 25px;
+        line-height: 70px;
+        padding-left: 4px;
+        padding-top: 0px;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+
+    .section_title::before {
+        bottom: -7px;
+        height: 3px;
+        width: 50px;
+    }
+
+    .small_section_title {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+
+    .about_us_section p{
+        font-size: 14px;
+    }
+
+    .theme_list_item li {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    /*==========================================*/
+    .working_area {
+        padding-bottom: 25px;
+    }
+
+    .card_image {
+        border-bottom: 2px solid #025730;
+    }
+    .dept_name {
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        bottom: -17px;
+        line-height: 1;
+    }
+
+    .dept_details {
+        font-size: 14px;
+    }
+    /*==========================================*/
+    .expert_doctors {
+        padding: 45px 0px;
+    }
+    .specialist_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .specialist_categories ul li{
+        display: inline-block;
+    }
+    .specialist_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    .expert_doctor_image .doctor_country span {
+        font-size: 14px;
+    }
+    .btn-expert-appointment {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .expert-doctor-info{
+        margin-top: 10px;
+    }
+    .expert-doctor-info .doctor_name{
+        font-size: 22px;
+        text-align: center;
+    }
+    .doctor_speciality {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .expert-doctor-info .rating{
+        text-align: center;
+    }
+
+    .expert_doctor_degree {
+        font-size: 14px;
+        color: #025730;
+        text-align: center;
+    }
+
+    .expert_doctor_details {
+        font-size: 14px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .expert_doctor_form input {
+        height: 50px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .expert_doctor_fees {
+        font-size: 16px;
+    }
+    /*==========================================*/
+    .doctor_appointment_area {
+        padding: 45px 0;
+        overflow: hidden;
+    }
+
+    fieldset .form-card {
+        min-height: 630px;
+        margin-top: 0px !important;
+    }
+    #progressbar{
+        display: none;
+    }
+
+    .instraction_for_appointment {
+        margin: 20px 0;
+    }
+
+    .form_title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    fieldset .doctor_card{
+        display: block!important;
+    }
+    fieldset .doctor_card .info_select {
+        display: block!important;
+    }
+
+    fieldset .doctor_card .doctor_info {
+        text-align: center;
+    }
+    .doctor_card .doctor_img {
+        width: 190px;
+        margin-right: 00px;
+        margin: auto;
+        text-align: center;
+    }
+    .doctor_select_btn .btn{
+        width: 100% !important;
+        display: block!important;
+        margin-top: 15px;
+    }
+
+    /*==========================================*/
+    .why_choose_us {
+        padding: 45px 0px;
+    }
+
+    .choose_us_text {
+        padding-right: 0px;
+    }
+    .choose_us_text p {
+        font-size: 12px;
+    }
+
+    .counter {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .full_counter .counter h3 {
+        font-size: 26px;
+    }
+
+    .choose_us_blocks .block {
+        margin-top: 15px;
+    }
+    /*==========================================*/
+
+    .how_mcare_works {
+        padding: 45px 0px;
+    }
+
+    .how_mcare_works_text p{
+        font-size: 14px;
+    }
+
+    .how_mcare_works img{
+        margin-top: 15px;
+    }
+    /*==========================================*/
+    .download_app {
+        background-color: #27B471;
+        padding: 45px 0;
+    }
+
+    .download_app .device_image {
+        width: auto;
+    }
+
+    .download_app .device_text h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .download_app .device_text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .store_logo{
+        text-align: center;
+    }
+    .store_logo img{
+        margin: 3px 0px;
+    }
+
+    /*==========================================*/
+    .e-pharmacy {
+        padding: 45px 0;
+    }
+
+    .e-pharmacy .product_categories ul {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .e-pharmacy .product_categories ul li{
+        display: inline-block;
+    }
+    .e-pharmacy .product_categories ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    /*==========================================*/
+    .testimonials_area {
+        padding: 45px 0px;
+    }
+
+    .testimonials_text span {
+        margin-bottom: 15px;
+    }
+
+    .testimonials_text p {
+        font-size: 14px;
+        width: auto;
+        margin: auto;
+    }
+
+    /*==========================================*/
+    .contactimg_section img {
+        min-height: auto;
+    }
+
+    .contact-box {
+        width: auto;
+        min-height: 160px;
+        margin-left: auto;
+        margin-top: -17px;
+        margin-bottom: 40px;
+    }
+
+    .contact_title {
+        font-size: 26px;
+    }
+
+    .contact_section {
+        padding-bottom: 15px;
+    }
+
+    .contact_area .btn-theme{
+        display: block;
+        width: 100%;
+    }
+    /*==========================================*/
+    .emergency_contact i.fa-phone-alt {
+        display: none;
+    }
+
+    .emergency_contact i.fa-envelope {
+        display: none;
+    }
+    .emergency_contact {
+        padding: 10px 0px;
+        border-radius: 10px;
+        margin-top: -60px;
+    }
+    .emergency_contact h4 {
+        font-size: 14px;
+    }
+    .emergency_contact p {
+        font-size: 14px;
+    }
+
+    .emergency_contact_or {
+        font-size: 18px;
+    }
+
+    .top_footer {
+        padding: 45px 0px;
+        text-align: center;
+    }
+
+    .footer_title {
+        display: inline-block;
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul li {
+        padding: 5px 0;
+    }
+
+    /*==========================================*/
+    /*about us page*/
+    /*==========================================*/
+    .mission_img{
+        margin-top: 20px;
+    }
+
+
+    /*==========================================*/
+    /*Doctor page*/
+    /*==========================================*/
+
+    .find_doctors {
+        padding: 45px 0px;
+    }
+
+    .find_doctors h2{
+        font-size: 22px;
+    }
+
+    .our_popular_doctors {
+        padding: 45px 0px;
+    }
+
+    .popular_doctor_infos .doctor_speciality{
+        text-align: left;
+    }
+
+    .doctor_name {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+}

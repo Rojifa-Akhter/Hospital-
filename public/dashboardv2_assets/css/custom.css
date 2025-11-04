@@ -1,0 +1,13 @@
+/*  use on  My Dashboard */
+.dash1-card .ratio {
+    position: absolute;
+    right: -10px;
+    top: 20px;
+    padding: 20px 35px;
+    background-color: #222222;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 40px 0px 0px 40px;
+}

@@ -1,0 +1,82 @@
+
+Warning: Module 'oci8' already loaded in Unknown on line 0
+<style>
+    .accordion_title {
+        position: relative;
+    }
+
+    .accordion_title i {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        transition: all 0.3s;
+    }
+
+    .collapsed.accordion_title i {
+
+        transform: translateY(-50%) rotate(180deg);
+    }
+</style>
+
+
+<link rel="stylesheet" href="{{ asset('css/typeaheadjs.css') }}">
+<section id="add_doctor">
+	<div class="container-fluid">
+		<div class="row bg-white border-bottom sticky-top shadow-sm">
+			<div class="col-md-12 mb-1">
+				<h5 class="mt-2 mb-0">Employee Registration</h5>
+				<small>Patient / New Registration</small>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header"><h5>Employee Registration Form</h5></div>
+			<div class="card-body">
+				@include('admin.settings.doctor.add_new_doctor_form')
+			</div>
+		</div>
+	</div>
+</section>
+<link rel="stylesheet" href="{{ asset('datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+<!-- datepicker -->
+<script src="{{ asset('datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ asset('js/typeahead.bundle.js') }}"></script>
+<script>
+	$('.datepicker').datepicker({
+		format: 'dd/mm/yyyy'
+	});
+
+	$(function(){
+		$('#doctor_marital_status').on('change', function() {
+			if ( this.value == 20)
+			{
+				$("#spouse").show();
+			}else{
+				$("#spouse").hide();
+			}
+		});
+	});
+
+	openDoctorDegreeAutocomplete('#doctor_degree1');
+	openDoctorDegreeAutocomplete('#doctor_degree2');
+	openDoctorDegreeAutocomplete('#doctor_degree3');
+	openDoctorDegreeAutocomplete('#doctor_degree4');
+
+	function readURL(input) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				$('#imagePreview').css('background-image', 'url('+e.target.result +')');
+				$('#imagePreview').hide();
+				$('#imagePreview').fadeIn(650);
+			}
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+	$("#imageUpload").change(function() {
+		readURL(this);
+	});
+
+</script>
+

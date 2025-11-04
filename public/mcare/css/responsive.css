@@ -1,0 +1,683 @@
+@media (max-width: 1599px) {
+    .banner-section {
+        height: 288px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .banner-section {
+        height: 260px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .banner-section {
+        height: 400px;
+    }
+    .hospital_section .sidebar_filter h3 {
+        font-size: 14px;
+    }
+    .hospital_section .inner_hospital h2 {
+        font-size: 14px;
+    }
+    .hospital_section .sidebar_filter .input-group .form-control {
+        font-size: 10px;
+    }
+    .doctors_section .sidebar_filter .input-group .form-control {
+        font-size: 10px;
+    }
+    .hospital_section .inner_hospital ul li i {
+        font-size: 10px;
+    }
+    .hospital_section .inner_hospital ul li b {
+        font-size: 10px;
+    }
+    .hospital_section .inner_hospital ul .btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1299px) {
+    .banner-section {
+        height: 54vh;
+    }
+}
+
+@media (max-width: 1199px) {
+    .banner-section {
+        height: 60vh;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 20px;
+        height: 20px;
+        line-height: 26px;
+    }
+    .slick-prev::before,
+    .slick-next::before {
+        font-size: 12px;
+    }
+    .top-bar .information li {
+        margin: 0px 5px !important;
+    }
+
+    .top-bar .information li i {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+
+    .top-bar .information li span {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .top-bar .information li a {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .top-bar .top_bar_user li a {
+        margin-left: 5px;
+        font-weight: 400;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0px 10px !important;
+    }
+
+    .upprescription .btn {
+        font-size: 14px;
+        padding: 10px 8px;
+        font-weight: 500;
+    }
+    .upprescription .btn i {
+        margin-right: 5px;
+    }
+
+    .services-section {
+        padding: 20px 0px;
+    }
+    .services-section h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px !important;
+    }
+
+    .services-section .card .card-body h5 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px !important;
+    }
+
+    .services-section .card .card-body .btn {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .services-section .card-body {
+        padding: 10px;
+    }
+
+    .medical-section {
+        padding: 20px 0px;
+    }
+
+    .medical-section .products .product-content {
+        padding: 20px 0px;
+    }
+    .medical-section .section_header h2 {
+        font-size: 18px;
+    }
+
+    .section_header .inner-medical a {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 15px;
+    }
+
+    .section_header .inner-medical form .input-group .form-control {
+        font-size: 12px;
+    }
+
+    .section_header .inner-medical form .input-group .input-group-append {
+        font-size: 12px;
+    }
+
+    .section_header .inner-medical form .input-group .input-group-append .srchbtn {
+        width: 30px;
+        font-size: 14px;
+    }
+
+    .medical-section .products .product-content h3 {
+        font-size: 18px;
+    }
+
+    .medical-section .products .product-content .btn {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .medical-section .products .card .product-body .product-name {
+        font-size: 14px;
+    }
+
+    .medical-section .products .card .product-body .company-name {
+        font-size: 12px;
+    }
+
+    .medical-section .products .card .product-body .price {
+        font-size: 14px;
+    }
+    .doctor-section {
+        padding: 20px 0px;
+    }
+    .doctor-content {
+        padding: 20px 0;
+    }
+
+    .doctor-section .section_header h2 {
+        font-size: 18px;
+    }
+    .doctor-section .inner-doctor a {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .doctor-section .inner-doctor form .input-group .form-control {
+        font-size: 12px;
+    }
+
+    .doctor-section .inner-doctor form .input-group .input-group-append {
+        font-size: 12px;
+    }
+
+    .doctor-section .inner-doctor form .input-group .input-group-append .srchbtn {
+        width: 30px;
+        font-size: 14px;
+    }
+
+    .doctor-content h3 {
+        font-size: 18px;
+    }
+
+    .doctor-content .btn {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .doctor-box .doctor-img img {
+        max-width: 65px;
+    }
+    .doctor-box h2 {
+        font-size: 14px;
+    }
+
+    .doctor-box ul li b {
+        font-size: 10px;
+    }
+    .doctor-box ul li i {
+        font-size: 10px;
+    }
+
+    .hospital-section {
+        padding: 20px 0px;
+    }
+
+    .hospital-section .section_header h2 {
+        font-size: 18px;
+    }
+
+    .hospital-section .inner-hospital form .input-group .form-control {
+        font-size: 12px;
+    }
+
+    .hospital-section .inner-hospital form .input-group .input-group-append {
+        font-size: 12px;
+    }
+    .hospital-section .inner-hospital form .input-group .input-group-append .srchbtn {
+        width: 30px;
+        font-size: 14px;
+    }
+
+    .hospital-section .inner-hospital a {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .hospital-content {
+        padding: 20px 0;
+    }
+
+    .hospital-content h3 {
+        font-size: 18px;
+    }
+
+    .hospital-content .btn {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .hospital-box .hospital-img img {
+        max-width: 135px;
+    }
+
+    .hospital-box h2 {
+        font-size: 16px;
+    }
+
+    .hospital-box ul li b {
+        font-size: 10px;
+    }
+
+    .hospital-box ul li i {
+        font-size: 12px;
+    }
+    .discount-section {
+        padding: 20px 0px;
+    }
+
+    .testmonial-section {
+        padding: 20px 0px;
+    }
+
+    .inner-app {
+        margin-bottom: 25px;
+    }
+
+    .online-section {
+        padding: 20px 0px;
+    }
+    .online-section .pb-5,
+    .py-5 {
+        padding-bottom: 0rem !important;
+    }
+    footer {
+        /* background-color: #28b270; */
+        padding: 20px 0px;
+    }
+
+    .subscribe-text h2 {
+        font-size: 18px;
+    }
+
+    .subscribe-wrapper .subscribe-form .input-group input {
+        font-size: 12px;
+    }
+
+    .subscribe-wrapper .subscribe-form .input-group .input-group-append .btn {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .widget1 h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .widget1 p {
+        font-size: 12px;
+    }
+
+    .widget1 p span {
+        font-size: 12px;
+    }
+
+    .widget2 ul li a {
+        font-size: 12px;
+    }
+
+    .widget3 h5 {
+        font-size: 18px;
+    }
+    .widget3 ul li a {
+        font-size: 12px;
+    }
+
+    .widget2 img {
+        max-width: 150px;
+        margin-top: 10px;
+    }
+
+    .payment_img li a img {
+        height: 25px;
+    }
+    .bottom-footer .copyright {
+        font-size: 10px;
+    }
+    .bottom-footer .copyright span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-section {
+        height: 60vh;
+    }
+
+    .section_title2 {
+        font-size: 30px;
+    }
+
+    .section_title2::after {
+        right: -60px;
+        height: 2px;
+        width: 50px;
+    }
+
+    .section_title2::before {
+        left: -60px;
+        height: 2px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-section {
+        height: 60vh;
+    }
+    .section_header .inner-medical form {
+        margin-right: 0;
+        display: none !important;
+    }
+
+    .doctor-section .inner-doctor form .input-group {
+        display: none;
+    }
+    .doctor-section .inner-doctor form {
+        width: 0;
+    }
+    .hospital-section .inner-hospital form .input-group {
+        display: none;
+    }
+    .hospital-section .inner-hospital form {
+        width: 0;
+    }
+
+    .doctors_section {
+        padding: 15px 0px;
+    }
+
+    .section_title2::before {
+        display: none;
+    }
+    .section_title2::after {
+        display: none;
+    }
+    .section_title2 {
+        font-size: 24px;
+    }
+
+    .top-bar .container-fluid {
+        width: auto;
+    }
+
+    .top-bar .information li {
+        margin: 0px 5px !important;
+        text-align: center;
+    }
+
+    .hospital-box {
+        padding: 0px;
+    }
+    .hospital-box > .d-flex{
+        display: block!important;
+    }
+
+    .hospital-box .d-flex .hospital-img{
+        display: block!important;
+    }
+
+    .hospital-box .d-flex .hospital-img img{
+        max-width: 100% !important;
+    }
+
+
+    .hospital-box .hospital_info{
+        margin: 10px 0px 0px!important;
+    }
+
+    .doctor-section .inner-doctor form{
+        margin-right: 0px !important;
+    }
+
+    .hospital-section .inner-hospital form {
+        margin-right: 0px !important;
+    }
+
+    .doctor-box .doctor-img{
+        display: block!important;
+    }
+    .doctor-box {
+        padding: 0px;
+    }
+
+    .doctor-box .d-flex{
+        display: block!important;
+    }
+
+    .doctor-box .d-flex .doctor_info{
+        margin-left: 0px!important;
+    }
+
+    .doctor-box ul .inner-highlight p {
+        font-size: 12px;
+    }
+
+    .services-section .inner-gallery{
+        width: 65%;
+        margin: auto;
+    }
+
+    .medical-section .proBtn img{
+        width: 70%!important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .top-bar .information {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .top-bar .top_bar_user {
+        justify-content: center !important;
+    }
+
+    .top-bar .top_bar_user li a {
+        font-size: 12px;
+    }
+    .banner-section {
+        height: 95px;
+    }
+    .navbar-brand {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin-right: 0rem;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .upprescription {
+        justify-content: center;
+    }
+    .medical-section .section_header h2 {
+        text-align: center;
+    }
+    .medical-section .inner-medical {
+        justify-content: center;
+    }
+    .medical-section .products .card img {
+        max-width: 300px;
+        margin: 0px auto;
+    }
+    .doctor-section .section_header h2 {
+        text-align: center;
+    }
+
+    .doctor-section .inner-doctor {
+        justify-content: center;
+    }
+    .doctor-box {
+        padding: 10px 30px;
+    }
+
+    .hospital-section .inner-hospital {
+        justify-content: center;
+    }
+
+    .hospital-section .section_header h2 {
+        text-align: center;
+    }
+    .hospital-box {
+        padding: 10px 20px;
+    }
+
+    .inner-app .d-flex {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .inner-app h2 {
+        font-size: 14px;
+    }
+
+    .inner-app p {
+        font-size: 10px;
+        text-align: center;
+        margin: 5px 0px !important;
+    }
+    .inner-app .btn {
+        font-size: 12px;
+    }
+    .subscribe-text h2 {
+        text-align: center;
+    }
+    .widget1 {
+        text-align: center;
+        width: 265px;
+        margin: 0px auto;
+    }
+
+    .widget2 {
+        width: 265px;
+        margin: 40px auto;
+    }
+
+    .widget3 {
+        text-align: center !important;
+        width: 265px;
+        margin: 0px auto;
+    }
+    footer .pb-4,
+    .py-4 {
+        padding-bottom: 0rem !important;
+    }
+    footer .pt-4,
+    .py-4 {
+        padding-top: 0rem !important;
+    }
+    .hospital_section {
+        padding: 15px 0px;
+    }
+
+    .hospital_section .hospital_gallery .inner_hospital {
+        margin: 10px 0px;
+    }
+    .hospital_section .inner_hospital .hospital-img img {
+        border: 1px solid #dfeae4;
+        border-radius: 5px;
+        max-width: 300px;
+    }
+
+    .doctors_section {
+        padding: 15px 0px;
+    }
+
+    .section_title2::before {
+        display: none;
+    }
+    .section_title2::after {
+        display: none;
+    }
+    .section_title2 {
+        font-size: 24px;
+    }
+
+    .top-bar .container-fluid {
+        width: auto;
+    }
+
+    .top-bar .information li {
+        margin: 0px 5px !important;
+        text-align: center;
+    }
+
+    .hospital-box {
+        padding: 0px;
+    }
+    .hospital-box > .d-flex{
+        display: block!important;
+    }
+
+    .hospital-box .d-flex .hospital-img{
+        display: block!important;
+    }
+
+    .hospital-box .d-flex .hospital-img img{
+        max-width: 100% !important;
+    }
+
+
+    .hospital-box .hospital_info{
+        margin: 10px 0px 0px!important;
+    }
+
+    .doctor-section .inner-doctor form{
+        margin-right: 0px !important;
+    }
+
+    .hospital-section .inner-hospital form {
+        margin-right: 0px !important;
+    }
+
+    .doctor-box .doctor-img{
+        display: block!important;
+    }
+    .doctor-box {
+        padding: 0px;
+    }
+
+    .doctor-box .d-flex{
+        display: block!important;
+    }
+
+    .doctor-box .d-flex .doctor_info{
+        margin-left: 0px!important;
+    }
+
+    .doctor-box ul .inner-highlight p {
+        font-size: 12px;
+    }
+
+    .services-section .inner-gallery{
+        width: 50%;
+        margin: auto;
+    }
+
+    .medical-section .proBtn img{
+        width: 70%!important;
+        margin: auto;
+    }
+    .banner1{
+        display: none;
+    }
+    .banner8{
+    display: block;
+}
+
+}

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+    @page {
+        margin-top: 0cm;
+        margin-bottom: 0cm;
+        margin-left: 0cm;
+        margin-right: 0cm;
+        height: 29.7cm;
+        width: 21 cm;
+        position: relative;
+    }
+
+    body {
+        padding-top: 2.5cm;
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+        padding-bottom: 0cm;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    a {
+        color: #0087C3;
+        text-decoration: none;
+    }
+
+
+    header {
+        padding: 0.5cm;
+        /* margin-bottom: 20px; */
+        border-bottom: 1px solid #AAAAAA;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: calc(100% - 1cm);
+
+    }
+
+    footer {
+        color: #777777;
+        /*border-top: 1px solid #AAAAAA;*/
+        padding: 10px 10px 0px 10px;
+    }
+
+    #logo {
+        float: right;
+        margin-top: 8px;
+    }
+
+    #logo img {
+        height: 70px;
+    }
+
+    #company {
+        float: left;
+        text-align: left;
+    }
+
+
+    #details {
+        margin-bottom: 50px;
+    }
+
+    #client {
+        padding-left: 6px;
+        border-left: 6px solid #0087C3;
+        float: left;
+    }
+
+    #client .to {
+        color: #777777;
+    }
+
+    h2.name {
+        font-size: 1.4em;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .candidate_name {
+        margin: 0px;
+    }
+
+    #invoice {
+        float: right;
+        text-align: right;
+    }
+
+    #invoice h1 {
+        color: #0087C3;
+        font-size: 2.4em;
+        line-height: 1em;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+    }
+
+    #invoice .date {
+        font-size: 1.1em;
+        color: #777777;
+    }
+
+    #thanks {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    #notices {
+        padding-left: 6px;
+        border-left: 6px solid #0087C3;
+    }
+
+    #notices .notice {
+        font-size: 1.2em;
+    }
+
+
+    .d-flex {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    .align-items-center {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .justify-content-center {
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .text-left {
+        text-align: left !important;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .mb-0 {
+        margin-bottom: 0px;
+    }
+
+    .mt-0 {
+        margin-top: 0px;
+    }
+
+    .p-0{
+        padding: 0px;
+    }
+
+    .p-2{
+        padding: 2px;
+    }
+
+    .py-3{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .px-10{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .px-8{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .px-5{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .company-logo {
+        margin-top: 35px;
+        margin-right: 10px;
+    }
+
+    .header_text {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #dbeae0;
+        color: #000;
+    }
+
+    .text-green{
+        color: green;
+    }
+
+    .font-size24{
+        font-size: 24px;
+    }
+
+    .font-size22{
+        font-size: 22px;
+    }
+
+    .font-size20{
+        font-size: 20px;
+    }
+
+    .font-size18{
+        font-size: 18px;
+    }
+
+    .font-size16{
+        font-size: 16px;
+    }
+
+    .font-size14{
+        font-size: 14px;
+    }
+
+    .font-weight400{
+        font-weight: 400;
+    }
+
+    .font-weight500{
+        font-weight: 500;
+    }
+
+    .font-weight700{
+        font-weight: 700;
+    }
+
+    .border-bottom1{
+        border-bottom: 1px solid #222;
+    }
+    .border{
+        border: 1px solid #222;
+    }
+
+    .teeth-table td {
+        border: 1px solid #000;
+    }
+
+    .border-less {
+        border: 0px solid #fff !important;
+    }
+
+    .bg-danger {
+        background-color: red;
+        color: #fff;
+    }
+
+</style>
+</head>
+<body>
+    <header class="clearfix">
+        <div id="company">
+            <div>
+                <h2 class="candidate_name">Khwaja Badrudduja Modern Hospital</h2>
+            </div>
+            <div><b>Address:</b> Block -D, Holding - 10/1, Aziz Mansion, Shafipur, Kaliakair, Gazipur.</div>
+            <div><b>Phone:</b> TEL : (+88) 01776-606262</div>
+            <div><b>Email:</b> <a href="#">info@kbmh.com</a></div>
+        </div>
+        <div id="logo">
+            <img class="hospital-logo" style="background-color:#fff;width:100px"src="imageURL" alt="img">
+        </div>
+    </header>
+
+    <main>
+        <section id="prescription " style="margin-top: 10px;">
+            <div class="container p-0">
+                <table style="width: 100%; border-bottom:1px solid;">
+                    <tr>
+                        <td colspan="2" class="text-left">
+                            <img src="data:image/png;base64, {{ $patient_barcode }} " />
+                        </td>
+                        <td colspan="2" class="text-right">
+                            <img src="data:image/png;base64, {{ $prescription_barcode }} " />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10%" class="text-left"><strong>PID</strong></td>
+                        <td width="55%" class="text-left">:  P210914009177</td>
+                        <td width="15%" class="text-left"><strong>Prescription ID</strong></td>
+                        <td class="text-left">: 141000569</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Name</strong></td>
+                        <td>: Mahmudullah Riyad </td>
+                        <td><strong>Visit Date & Time</strong></td>
+                        <td>: 14/09/2021 10:46 am</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Age</strong></td>
+                        <td>: 35 Y ,01 M ,01 D</td>
+                        <td><strong>Gender</strong></td>
+                        <td>: Male</td>
+                    </tr>
+                </table>
+
+                <table width="80%" style="margin:30px auto 10px auto;">
+                    <tr>
+                        <td>
+                            <div>
+                                <span style="border-top:1px solid #000; border-left:1px solid #000;">Upper</span>Right
+                            </div>
+                        </td>
+                        <td align="right">
+                            <div>Upper 
+                                <span style="border-top:1px solid #000; border-right:1px solid #000;">Left</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border-right">
+                            <table class="teeth-table" cellpadding="5" cellspacing="2" style="float: right;border-collapse:separate !important;">
+                                <tr>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                    <td class="">11</td>
+                                </tr>
+                                <tr>
+                                    <td class="">51</td>
+                                    <td class="">51</td>
+                                    <td class="">51</td>
+                                    <td class="">51</td>
+                                    <td class="">51</td>
+                                </tr>
+                                <tr>
+                                    <td class="">81</td>
+                                    <td class="">81</td>
+                                    <td class="">81</td>
+                                    <td class="">81</td>
+                                    <td class="">81</td>
+                                </tr>
+                                <tr>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                    <td class="">41</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table style="border-collapse:separate !important;" class="teeth-table" cellpadding="5" cellspacing="2">
+                                <tr>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                    <td class="">21</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-less"></td>
+                                    <td class="border-less"></td>
+                                    <td class="border-less"></td>
+                                    <td class="">61</td>
+                                    <td class="">61</td>
+                                    <td class="">61</td>
+                                    <td class="">61</td>
+                                    <td class="">61</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-less"></td>
+                                    <td class="border-less"></td>
+                                    <td class="border-less"></td>
+                                    <td class="">71</td>
+                                    <td class="">71</td>
+                                    <td class="">71</td>
+                                    <td class="">71</td>
+                                    <td class="">71</td>
+                                </tr>
+                                <tr>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                    <td class="">31</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span style="border-bottom:1px solid #000; border-left:1px solid #000;">Lower</span>
+                                Right
+                            </div>
+                        </td>
+                        <td align="right">
+                            <div>Lower
+                                <span style="border-bottom:1px solid #000; border-right:1px solid #000;">Left</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="mb-2">
+                    <div><strong>Teeth-53: </strong> Bleeding in Teeth</div>
+                    <div><strong>Teeth-53: </strong> Bleeding in Teeth</div>
+                </div>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h5 class="mb-0"><strong>R<sub>x</sub></strong></h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="40%" valign="top" style="border-right: 1px solid; padding: 10px;">
+                            <div class="mb-2">
+                                <u><strong>Chief Complaints</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Pain in teeth</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Clinical History</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>OPG (Digital)</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Confirmatory Diagnosis (ICD)</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong> Clinical Examination</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Investigations</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Disease</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Procedure</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="mb-2">
+                                <u><strong>Advice</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Disposal</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="mb-2">
+                                <u><strong>Note </strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Referred To </strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2 mt-20">
+                                <strong>Next Followup:</strong>
+                                16/09/2021 ( After 2 DAYs)
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Disposal</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="mb-2">
+                                <u><strong>Note </strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Referred To </strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2 mt-20">
+                                <strong>Next Followup:</strong>
+                                16/09/2021 ( After 2 DAYs)
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Disposal</strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="mb-2">
+                                <u><strong>Note </strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2">
+                                <u><strong>Referred To </strong></u>
+                                <ul class="ml-0 pl-4">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-2 mt-20">
+                                <strong>Next Followup:</strong>
+                                16/09/2021 ( After 2 DAYs)
+                            </div>
+                        </td>
+
+                        <td class="text-left pl-2" valign="top">
+                            <div class="mb-2">
+                                <div class="mt-10">
+                                    <table>
+                                        <tr>
+                                            <td valign="top" width="30"><strong>1</strong>
+                                            </td>
+                                            <td valign="top">
+                                                <div>AMODIS 400 MG TAB</div>
+                                                <div class="" style="margin: 0px 0px 5px 10px;">
+                                                    <strong>
+                                                        Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal ) Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal ) Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal )
+                                                        <strong>Continue</strong>
+                                                    </strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" width="30"><strong>1</strong>
+                                            </td>
+                                            <td valign="top">
+                                                <div>AMODIS 400 MG TAB</div>
+                                                <div class="" style="margin: 0px 0px 5px 10px;">
+                                                    <strong>
+                                                        Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal )
+                                                        <strong>Continue</strong>
+                                                    </strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" width="30"><strong>1</strong>
+                                            </td>
+                                            <td valign="top">
+                                                <div>AMODIS 400 MG TAB</div>
+                                                <div class="" style="margin: 0px 0px 5px 10px;">
+                                                    <strong>
+                                                        Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal )
+                                                        <strong>Continue</strong>
+                                                    </strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" width="30"><strong>1</strong>
+                                            </td>
+                                            <td valign="top">
+                                                <div>AMODIS 400 MG TAB</div>
+                                                <div class="" style="margin: 0px 0px 5px 10px;">
+                                                    <strong>
+                                                        Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal )
+                                                        <strong>Continue</strong>
+                                                    </strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" width="30"><strong>1</strong>
+                                            </td>
+                                            <td valign="top">
+                                                <div>AMODIS 400 MG TAB</div>
+                                                <div class="" style="margin: 0px 0px 5px 10px;">
+                                                    <strong>
+                                                        Oral 1+0+1 [ 10 DAY ] Qty 20 ( After Meal )
+                                                        <strong>Continue</strong>
+                                                    </strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div style="text-align: left; margin-left:520px; margin-bottom: 30px; font-size: 11px;">
+            <div id="doc_sign">doctor_signature</div>
+            <hr>
+            <div><strong>Doctor Denist</strong></div>
+            <div>Degree1, Degree2, Degree3, Degree4
+            </div>
+            <div>Advanced Surgical Training ( Japan)
+                Trained in facial plastic and
+            reconstructive surgery (Canada).</div>
+        </div>
+
+        <table class="w-100" style="border-top: 1px solid #AAAAAA;">
+            <tr>
+                <td class="text-left"><strong>Printing Date & Time : 22/09/2021 05:18:13 am</strong></td>
+                <td class="text-right"><strong>Powered By - NEXTGEN INNOVATION LTD.</strong></td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+
+</html>

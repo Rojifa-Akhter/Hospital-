@@ -1,0 +1,2340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* *********************************************************************************
+                  Global Css
+********************************************************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    background: #fff;
+}
+
+ul,
+dl,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+img {
+    max-width: 100%;
+}
+a,
+a:hover {
+    text-decoration: none !important;
+}
+.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+    background-color: #9fd2af;
+    color: #333;
+    border-color: #9fd2af;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0rem rgb(108 117 125 / 50%);
+}
+
+.section_title2 {
+    font-size: 45px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #000000;
+}
+.section_title2::before {
+    position: absolute;
+    content: "";
+    left: -90px;
+    height: 5px;
+    width: 76px;
+    background-color: #515151;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section_title2::after {
+    position: absolute;
+    content: "";
+    right: -90px;
+    height: 5px;
+    width: 76px;
+    background-color: #515151;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub_title {
+    font-size: 18px;
+    width: 670px;
+    margin: auto !important;
+    color: #000;
+}
+
+/* ***************************************************
+
+****************************************************** */
+/* header */
+/*  top bar  */
+.top-bar {
+    background: #10a1b6;
+    padding: 10px 0px;
+}
+.top-bar .container-fluid {
+    width: calc(100% - 100px);
+}
+
+.top-bar .information li {
+    margin: 0px 20px !important;
+}
+.top-bar .information li i {
+    margin-right: 15px;
+    color: #0a0a0a;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.top-bar .information li span {
+    color: #fff;
+    font-weight: 600;
+}
+.top-bar .information li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.top-bar .top_bar_user input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 15px;
+    max-width: 10%;
+}
+
+.top-bar .top_bar_user li span {
+    color: #fff;
+    margin-left: 10px;
+}
+.top-bar .top_bar_user li a {
+    margin-left: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+/*  top bar  */
+/* nav */
+.navbar-brand img {
+    max-width: 70%;
+}
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    padding: 0px 15px !important;
+}
+
+.upprescription .btn {
+    border: 1px solid #10a1b6;
+    font-size: 14px;
+    padding: 12px 20px;
+    color: #333;
+    font-weight: 500;
+}
+.upprescription .btn i {
+    margin-right: 14px;
+}
+/* nav */
+
+/* modal */
+.modal-content {
+    background: #f8fdfaf2;
+    padding: 10px;
+    border: 1px solid #145938;
+}
+.modal-content .modal-body {
+    padding: 5px;
+}
+
+.modal-content .modal-body form label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #145938;
+}
+.modal-content .modal-body form .file_up {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px 10px;
+}
+.modal-content .modal-body form .submit {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 3px 15px;
+    border: 1px solid #145938;
+    background: #145938;
+    color: #fff;
+    border-radius: 3px;
+}
+.modal-content .modal-footer {
+    padding: 0 !important;
+}
+.modal-content .modal-footer .btn {
+    color: #020202;
+    border: 1px solid #145938;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 500;
+}
+/* modal */
+
+/* header */
+/* banner-section */
+
+.banner2{
+    display: none;
+}
+.banner3{
+    display: none;
+}
+.banner4{
+    display: none;
+}
+.banner5{
+    display: none;
+}
+.banner6{
+    display: none;
+}
+.banner7{
+    display: none;
+}
+.banner8{
+    display: none;
+}
+.banner-section {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+}
+/* banner-section */
+/* services-section */
+.services-section {
+    padding: 40px 0px;
+}
+.services-section h1 {
+    color: #183b23;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+}
+
+.services-section .card {
+    border: 0px solid rgb(40 178 112 / 0%) !important;
+    border-radius: 0 !important;
+}
+
+.services-section .card .card-body h5 {
+    color: #183a24;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+}
+.services-section .card .card-body .btn { 
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #10a1b6;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background: #10a1b6;
+    transition: all 0.3s linear;
+}
+
+.services-section .card .card-body .btn:hover{
+    background: transparent;
+    color: #183a24;
+}
+/* services-section end */
+/* medical-section start */
+.medical-section {
+    padding: 50px 0px;
+}
+.section_header {
+    background-color: #10a1b6;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.medical-section .section_header h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.medical-section .inner-medical {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section_header .inner-medical form {
+    margin-right: 20px;
+}
+
+.section_header .inner-medical form .input-group .form-control {
+    background: #ff000000;
+    border: 1px solid #fff;
+    border-right: none !important;
+    color: #fff;
+}
+
+.section_header .inner-medical form .input-group .form-control::placeholder {
+    color: #fff;
+}
+
+.section_header .inner-medical form .input-group .input-group-append select {
+    border: 1px solid #fff;
+    background:#10a1b6;
+    border-left: 1px solid #fff;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.section_header .inner-medical form .input-group .input-group-append .srchbtn {
+    width: 40px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    text-align: center;
+    color: #10a1b6;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.section_header .inner-medical a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 30px;
+}
+
+/* products */
+.medical-section .products .product-content {
+    padding: 50px 0px;
+}
+.medical-section .products .product-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #183b23;
+}
+.medical-section .products .product-content .btn {
+    color: #183b23;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #183b23;
+    display: inline-block;
+    padding: 7px 24px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+}
+
+.medical-section .products .product-content .btn:hover{
+    background: #183b23;
+    color: #fff;
+}
+.medical-section .products .card {
+    border: none;
+    border-radius: 0;
+}
+
+.medical-section .products .card .product-body {
+    padding: 10px;
+}
+.medical-section .products .card .product-body .product-name {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+}
+.medical-section .products .card .product-body .company-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+.medical-section .products .card .product-body .discount {
+    font-size: 14px;
+    font-weight: 500;
+}
+.medical-section .products .card .product-body .discount .discount-off {
+    text-decoration: line-through;
+}
+.medical-section .products .card .product-body .discount .price-off {
+    color: #10a1b6;
+    font-weight: 600;
+}
+.medical-section .products .card .product-body .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #183b23;
+}
+/* products */
+/* slick */
+.slick-dots li button::before {
+    font-size: 50px;
+}
+.slick-dots li button::before {
+    color: #9fd2af;
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 1;
+    color: #28a745;
+}
+/* slick */
+
+/* medical-section end */
+
+/* doctors section  */
+
+.doctor-section {
+    padding: 50px 0px;
+}
+.section_header {
+    background-color: #10a1b6;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.doctor-section .section_header h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.doctor-section .inner-doctor {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.doctor-section .inner-doctor form {
+    margin-right: 20px;
+}
+
+.doctor-section .inner-doctor form .input-group .form-control {
+    background: #ff000000;
+    border: 1px solid #fff;
+    border-right: none !important;
+    color: #fff;
+}
+.doctor-section .inner-doctor form .input-group .form-control::placeholder {
+    color: #fff;
+}
+
+.doctor-section .inner-doctor form .input-group .input-group-append select {
+    border: 1px solid #fff;
+    background: #10a1b6;
+    border-left: 1px solid #fff;
+    color: #fff;
+    padding: 0px 10px;
+}
+.doctor-section .inner-doctor form .input-group .input-group-append .srchbtn {
+    width: 40px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    text-align: center;
+    color: #10a1b6;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.doctor-section .inner-doctor a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 30px;
+}
+.doctor-content {
+    padding: 50px 0;
+}
+.doctor-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #183b23;
+}
+.doctor-content .btn {
+    color: #183b23;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #183b23;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+/* doctors */
+.doctor-box .doctor-img img {
+    max-width: 100px;
+}
+.doctor-box h2 {
+    color: #2d79bd;
+    font-size: 16px;
+    font-weight: 700;
+}
+.doctor-box h3 {
+    font-size: 10px;
+    font-weight: 600;
+    color: #333;
+    line-height: 24px;
+}
+.doctor-box h4 {
+    font-size: 10px;
+    color: #333;
+    line-height: 12px;
+}
+
+.doctor-box ul li i {
+    color: #333 !important;
+}
+.doctor-box ul li span {
+    font-size: 12px;
+    color: #2d79c3;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.doctor-box ul li b {
+    font-size: 12px;
+    font-weight: 500;
+}
+.doctor-box ul .inner-highlight {
+    /* margin-left: 10px; */
+    margin-top: 5px;
+    text-align: justify;
+}
+.doctor-box ul .inner-highlight li {
+    margin-bottom: 5px !important;
+}
+.doctor-box ul .inner-highlight li i {
+    color: #333 !important;
+    font-size: 10px;
+    margin-top: 4px;
+}
+.doctor-box ul .inner-highlight li p {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+/* doctors section  */
+
+/* hospital section start */
+.hospital-section {
+    padding: 50px 0px;
+}
+.section_header {
+    background-color: #10a1b6;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.hospital-section .section_header h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.hospital-section .inner-hospital {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hospital-section .inner-hospital form {
+    margin-right: 20px;
+}
+
+.hospital-section .inner-hospital form .input-group .form-control {
+    background: #ff000000;
+    border: 1px solid #fff;
+    border-right: none !important;
+    color: #fff;
+}
+
+.hospital-section .inner-hospital form .input-group .form-control::placeholder {
+    color: #fff;
+}
+
+.hospital-section .inner-hospital form .input-group .input-group-append select {
+    border: 1px solid #fff;
+    background: #10a1b6;
+    border-left: 1px solid #fff;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.hospital-section
+    .inner-hospital
+    form
+    .input-group
+    .input-group-append
+    .srchbtn {
+    width: 40px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    text-align: center;
+    color: #10a1b6;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.hospital-section .inner-hospital a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 30px;
+}
+.hospital-content {
+    padding: 50px 0;
+}
+.hospital-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #183b23;
+}
+.hospital-content .btn {
+    color: #183b23;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #183b23;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+/* hospital */
+
+.hospital-box .hospital-img img {
+    max-width: 170px;
+}
+.hospital-box h2 {
+    color: #2d79bd;
+    font-size: 18px;
+    font-weight: 700;
+}
+.hospital-box h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    line-height: 26px;
+}
+.hospital-box h4 {
+    font-size: 11px;
+    color: #333;
+    line-height: 24px;
+}
+
+.hospital-box ul li i {
+    color: #333 !important;
+}
+.hospital-box ul li b {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* hospital section end */
+/* discount-section */
+.discount-section {
+    padding: 50px 0px;
+}
+
+/*======================================================*/
+/*Ads Product css start*/
+/*======================================================*/
+
+.sale_ads {
+    padding: 0px 0px 100px 0px;
+}
+.sale_discount {
+    position: relative;
+    z-index: -1;
+}
+.sale_discount::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(153, 192, 58, 1) 0%,
+        rgba(0, 212, 255, 0) 100%
+    );
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+.sale_parcent {
+    background: url(../images/ads_badge.png) top center no-repeat;
+    background-size: cover;
+    height: 113px;
+    width: 55px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 10px;
+    z-index: 9;
+}
+
+.sale_parcent span {
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    display: block;
+}
+
+.sale_parcent span:first-child {
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 34px;
+}
+.sale_parcent span:last-child {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sale_text {
+    position: absolute;
+    width: 140px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.sale_text p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/*======================================================*/
+/*Ads Product css end*/
+/*======================================================*/
+
+/*======================================================*/
+/* Testimonial  area Section end*/
+/*======================================================*/
+
+.testimonials_area {
+    padding: 100px 0px;
+    background: url(../img/testimonials.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.client-img {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #fff;
+    margin: 0px auto 20px;
+    position: relative;
+}
+
+.client-quote {
+    height: 30px;
+    width: 30px;
+    background-color: #e5e5e5;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #515151;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.carousel-content {
+    padding: 50px 0px;
+}
+.carousel-content h3 span {
+    font-size: 17px;
+    font-weight: normal;
+    color: #e8e8e8;
+    text-transform: uppercase;
+}
+.client-img img {
+    width: 120px;
+    height: 112px;
+    border-radius: 50%;
+}
+
+#testimonial {
+    text-align: center;
+    color: #fff;
+}
+.carousel-indicators li {
+    background-color: #414040;
+    margin: 0px 5px !important;
+}
+.testimonials_text {
+    color: #4f4f4f;
+}
+
+.testimonials_text h4 {
+    font-size: 24px;
+    color: #4f4f4f;
+    font-weight: 600;
+}
+
+.testimonials_text span {
+    font-size: 18px;
+    color: #242424;
+    margin-bottom: 30px;
+}
+
+.testimonials_text p {
+    font-size: 18px;
+    color: #484848;
+    width: 1000px;
+    margin-top: 20px;
+    margin: 20px auto 0px auto !important;
+}
+
+/*======================================================*/
+/* Testimonial  area Section end*/
+/*======================================================*/
+
+/* discount-section */
+
+/* testmonial-section */
+.testmonial-section {
+    padding: 50px 0px;
+}
+
+/* testmonial-section */
+/* online-section */
+.online-section {
+    padding: 50px 0px;
+}
+.online-img {
+    float: right;
+    overflow: hidden;
+}
+/* online-section */
+/* app */
+.inner-app {
+    background: #10a1b6;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+.inner-app h2 {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.inner-app p {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.inner-app .btn {
+    font-size: 12px;
+    background: #ff000003;
+    border: 1px solid #333;
+    padding: 7px 10px;
+    border-radius: 30px;
+    color: #0c7f40;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* app */
+/* footer section css start */
+footer {
+    background-color: #10a1b6;
+    padding: 50px 0px;
+}
+
+.subscribe-text h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.subscribe-wrapper .subscribe-form .input-group {
+    background: transparent;
+    border-radius: 5px;
+}
+.subscribe-wrapper .subscribe-form .input-group input {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.subscribe-wrapper .subscribe-form .input-group input::placeholder {
+    color: #fff;
+}
+
+.subscribe-wrapper .subscribe-form .input-group .input-group-append .btn {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    transition: all 0.3s linear;
+}
+.subscribe-wrapper .subscribe-form .input-group .input-group-append .btn:hover {
+    background-color: #9fd2af;
+    color: #333;
+}
+.padd {
+    margin-top: 40px;
+}
+.widget1 h5 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.widget1 p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 20px;
+}
+.widget1 p span {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.widget2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.widget2 img {
+    max-width: 200px;
+    border: 3px solid #999;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.widget2 ul li {
+    list-style: disc;
+    color: #fff;
+}
+.widget2 ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.widget3 h5 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.widget3 ul li a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 0px;
+}
+.widget3 ul li span {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.payment_img li a img {
+    height: 35px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.bottom-footer {
+    margin-top: 15px;
+}
+.bottom-footer .copyright {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.bottom-footer .copyright span {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/* footer section css end */
+/* ***************************************************************
+               hospital page css start here
+***************************************************************** */
+
+.hospital_section {
+    padding: 50px 0px;
+}
+
+.hospital_section .sidebar_filter h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #10a1b6;
+    margin: 10px 0px !important;
+}
+
+.hospital_section .sidebar_filter .input-group .input-group-text {
+    background: #dfeae4;
+}
+
+.hospital_section .sidebar_filter .input-group .form-control {
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+    background: #dfeae4;
+}
+
+.hospital_section .hospital_gallery .inner_hospital {
+    margin: 20px 0px;
+}
+.hospital_section .inner_hospital .hospital-img img {
+    border: 1px solid #dfeae4;
+    border-radius: 5px;
+}
+.hospital_section .inner_hospital h2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #10a1b6;
+    margin: 10px 0px 0 !important;
+}
+
+.hospital_section .inner_hospital ul li i {
+    font-size: 12px;
+}
+.hospital_section .inner_hospital ul li b {
+    font-size: 12px;
+    color: #040404;
+    font-weight: 500;
+}
+.hospital_section .inner_hospital ul .btn {
+    color: #10a1b6;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0;
+}
+/* ***************************************************************
+               hospital page css end here
+***************************************************************** */
+
+/* ***************************************************************
+               doctors page css start here
+***************************************************************** */
+
+.doctors_section {
+    padding: 50px 0px;
+}
+
+.doctors_section .sidebar_filter h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #10a1b6;
+    margin: 10px 0px !important;
+}
+
+.doctors_section .sidebar_filter .input-group .input-group-text {
+    background: #dfeae4;
+}
+
+.doctors_section .sidebar_filter .input-group .form-control {
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+    background: #dfeae4;
+}
+
+.doctors_section .doctors_gallery .inner_doctor {
+    margin: 20px 0px;
+}
+.doctors_section .inner_doctor .doctor-img img {
+    border: 1px solid #dfeae4;
+    border-radius: 5px;
+}
+.doctors_section .inner_doctor h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #10a1b6;
+    margin: 10px 0px !important;
+    text-align: left;
+}
+.doctors_section .inner_doctor p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    line-height: 20px;
+    text-align: left;
+}
+.doctors_section .inner_doctor ul li {
+    font-size: 12px;
+    color: #040404b8;
+    font-weight: 400;
+}
+.doctors_section .inner_doctor ul li span {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    color: #10a1b6;
+}
+.doctors_section .inner_doctor ul li b {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    color: #333;
+}
+.doctors_section .inner_doctor ul .btn {
+    color: #10a1b6;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0;
+}
+/* ***************************************************************
+               doctors page css end here
+***************************************************************** */
+
+.proBtn {
+    color: #000;
+    transition: all 0.3s linear;
+}
+.proBtn:hover {
+    color: #10a1b6;
+}
+
+/* Added By Nazmul 08/12/2021  */
+
+/* ****************************************************************
+
+                 doctor profile page css start
+***************************************************************** */
+.doctor_profile {
+    padding: 50px 0px 20px;
+}
+
+.doctor_profile .sidebar_filter h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #28b270;
+    margin: 10px 0px !important;
+}
+
+.doctor_profile .sidebar_filter .input-group .input-group-text {
+    background: #dfeae4;
+}
+
+.doctor_profile .sidebar_filter .input-group .form-control {
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+    background: #dfeae4;
+}
+
+.doctor_name {
+    margin-bottom: 15px;
+}
+
+.inner_docotor_name {
+    margin-bottom: 15px;
+}
+
+.inner_docotor_name img {
+    margin-bottom: 10px;
+}
+
+.inner_docotor_name h2 {
+    color: #666;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.inner_docotor_name p {
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.doctor_name .enquiry .btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 15px;
+    background: #28b270;
+    color: #fff;
+    border-radius: 5px !important;
+    border: 1px solid #28b270;
+    transition: all 0.3s linear;
+}
+
+.doctor_name .enquiry .btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.inner_about_doctor {
+    margin-bottom: 15px;
+}
+
+.inner_about_doctor ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+}
+
+.inner_about_doctor ul li i {
+    color: #666;
+}
+
+.inner_about_doctor ul li h3 {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inner_about_doctor ul li p {
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.inner_about_doctor ul .btn-link {
+    font-size: 12px;
+    color: #28b270;
+    font-weight: 600;
+}
+
+.hospital_name .inner_about_hospital {
+    margin-bottom: 15px;
+}
+
+.hospital_name .inner_about_hospital ul li i {
+    color: #666;
+}
+
+.hospital_name .inner_about_hospital ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hospital_name .inner_about_hospital ul li .btn-link {
+    font-size: 16px;
+    color: #28b270;
+    font-weight: 600;
+}
+
+.specialization .inner_specialization {
+    margin-bottom: 15px;
+}
+
+.specialization .inner_specialization ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.specialization .inner_specialization ul li i {
+    color: #666;
+}
+
+.specialization .inner_specialization ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.specialization .inner_specialization ul .btn-link {
+    font-size: 12px;
+    color: #28b270;
+    font-weight: 600;
+}
+
+.treatment .inner_treatments {
+    margin-bottom: 15px;
+}
+
+.treatment .inner_treatments ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.treatment .inner_treatments ul li i {
+    color: #666;
+}
+
+.treatment .inner_treatments ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.apointment {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.apointment .inner_apointment h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.apointment .inner_apointment .btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 15px;
+    background: #28b270;
+    color: #fff;
+    border-radius: 5px !important;
+    border: 1px solid #28b270;
+    transition: all 0.3s linear;
+    margin: 15px 0px;
+}
+
+.apointment .inner_apointment .btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.apointment .inner_apointment p {
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.work_experience .inner_work_experience {
+    margin: 15px 0px;
+}
+
+.work_experience .inner_work_experience ul li i {
+    color: #666;
+}
+
+.work_experience .inner_work_experience ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work_experience .inner_work_experience ul li h5 {
+    color: #5e5e5e;
+    font-size: 14px;
+    margin-top: 10px !important;
+}
+
+.doctor_education .inner_education {
+    margin-bottom: 15px;
+}
+
+.doctor_education .inner_education ul li i {
+    color: #666;
+}
+
+.doctor_education .inner_education ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.doctor_education .inner_education ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.doctor_awards .inner_awards {
+    margin-bottom: 15px;
+}
+
+.doctor_awards .inner_awards ul .btn {
+    font-size: 12px;
+    color: #28b270;
+    font-weight: 600;
+}
+
+.doctor_awards .inner_awards ul .marr {
+    list-style: auto;
+    margin-left: 19px !important;
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.doctor_awards .inner_awards ul li i {
+    color: #666;
+}
+
+.doctor_awards .inner_awards ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.doctor_location .inner_location {
+    margin-bottom: 15px;
+}
+
+.doctor_location .inner_location ul li {
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.doctor_location .inner_location ul li i {
+    color: #666;
+}
+
+.doctor_location .inner_location ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.similar_doctor_section .similar_doctor_ttile ul li i {
+    color: #666;
+}
+
+.similar_doctor_section .similar_doctor_ttile ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inner_similiar_profile {
+    margin-top: 25px;
+}
+
+.inner_similiar_profile .doctor-img img {
+    max-width: 120px;
+}
+
+.inner_similiar_profile h2 {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inner_similiar_profile h2 .drbtn {
+    color: #28b270;
+}
+
+.inner_similiar_profile h3 {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.inner_similiar_profile ul li {
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.inner_similiar_profile ul .btn-link {
+    font-size: 14px;
+    color: #28b270;
+    font-weight: 600;
+    line-height: 16px;
+    display: block;
+}
+
+.interested_section .inner_intersted {
+    margin-bottom: 15px;
+}
+
+.interested_section .inner_intersted ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+}
+
+.interested_section .inner_intersted ul li i {
+    color: #666;
+}
+
+.interested_section .inner_intersted ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.interested_section .inner_intersted ul li .btn_link {
+    color: #28b270;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.doctor_faq {
+    margin-bottom: 15px;
+}
+
+.doctor_faq .inner_doctor_faq ul li i {
+    color: #666;
+}
+
+.doctor_faq .inner_doctor_faq ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.doctor_faq .card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+}
+
+.doctor_faq .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 0;
+}
+
+.doctor_faq .card .card-title {
+    color: #000000;
+    margin-bottom: 0.625rem;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.doctor_faq .card .card-description {
+    margin-bottom: 0.875rem;
+    font-weight: 400;
+    color: #76838f;
+}
+
+.doctor_faq .accordion .card:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.doctor_faq .accordion .card {
+    border: none;
+}
+
+.doctor_faq .accordion .card .card-header {
+    border: none;
+}
+
+.doctor_faq .accordion .card .card-header * {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.doctor_faq .accordion .card .card-header a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    position: relative;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    padding-right: 1.5rem;
+}
+
+.doctor_faq .accordion .card .card-header * {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+}
+
+.doctor_faq .accordion .card .card-header a[aria-expanded="false"]::before {
+    content: "\002B";
+    font-size: 14px;
+}
+
+.doctor_faq .accordion .card .card-header a[aria-expanded="true"]::before {
+    content: "\2212";
+    font-size: 14px;
+}
+
+.doctor_faq .accordion .card .card-header a::before {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    font-size: 18px;
+    display: block;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 3px;
+    font-size: 0.756em;
+    color: #405189;
+}
+
+.doctor_faq .accordion .card .card-body {
+    padding: 0px 14px;
+}
+
+.doctor_faq .accordion .card .card-body p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.blog_doctor .inner_blog_post {
+    margin-bottom: 15px;
+}
+
+.blog_doctor .inner_blog_post ul li i {
+    color: #666;
+}
+
+.blog_doctor .inner_blog_post ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.blog_doctor .inner_blog_post ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+}
+
+.blog_doctor .inner_blog_post ul li .btn_link {
+    color: #28b270;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.medical_faq {
+    margin-bottom: 15px;
+}
+
+.medical_faq .inner_medical_faq ul li i {
+    color: #666;
+}
+
+.medical_faq .inner_medical_faq ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.medical_faq .card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+}
+
+.medical_faq .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 0;
+}
+
+.medical_faq .card .card-title {
+    color: #000000;
+    margin-bottom: 0.625rem;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.medical_faq .card .card-description {
+    margin-bottom: 0.875rem;
+    font-weight: 400;
+    color: #76838f;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.medical_faq .accordion .card .card-header {
+    border: none;
+}
+
+.medical_faq .card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.medical_faq .accordion .card .card-header * {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.medical_faq .accordion .card .card-header a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    position: relative;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    padding-right: 1.5rem;
+}
+
+.medical_faq .accordion .card .card-header * {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+}
+
+.medical_faq .accordion .card .card-header a[aria-expanded="false"]::before {
+    content: "\002B";
+    font-size: 14px;
+}
+
+.medical_faq .accordion .card .card-header a[aria-expanded="true"]::before {
+    content: "\2212";
+    font-size: 14px;
+}
+
+.medical_faq .accordion .card .card-header a::before {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    font-size: 18px;
+    display: block;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 3px;
+    font-size: 0.756em;
+    color: #405189;
+}
+
+.medical_faq .accordion .card .card-body {
+    padding: 0px 14px;
+}
+
+.medical_faq .accordion .card .card-body p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* rating */
+.doctor_rating {
+    padding: 20px 0px;
+}
+
+.doctor_rating .inner_rating {
+    padding: 40px 0px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.doctor_rating .inner_rating h3 {
+    color: #666;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.doctor_rating .inner_rating ul {
+    padding: 5px 0px !important;
+}
+
+.doctor_rating .inner_rating ul li i {
+    font-size: 20px;
+    margin: 0 5px;
+    color: rgb(162, 162, 160);
+    transition: all 0.3s linear;
+}
+
+.doctor_rating .inner_rating ul li i:hover {
+    color: rgb(255, 223, 0);
+}
+
+.doctor_rating .inner_rating p {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* rating */
+
+/* ****************************************************************
+
+                 doctor profile page css end
+***************************************************************** */
+/* **************************************************************
+                hospital page css start
+****************************************************************** */
+
+.hospital_name .inner_hospital_name h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #666;
+}
+
+.hospital_name .inner_hospital_name p {
+    color: #5e5e5e;
+    font-size: 12px;
+    margin-bottom: 5px !important;
+}
+
+.hospital_name .enquiry .btn {
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #28b270;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hospital_image {
+    position: relative;
+}
+
+.hospital_detail {
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.hospital_detail .joint-list ul li {
+    color: #999;
+    line-height: 12px;
+    display: inline-block !important;
+    font-size: 12px;
+    padding-right: 10px !important;
+    font-weight: 500;
+}
+
+.hospital_detail .joint-list ul li span {
+    color: #333;
+}
+
+.hospital_detail .award-listing ul li {
+    display: inline-block;
+}
+
+.hospital_detail .award-listing ul li img {
+    width: 45px;
+    height: 45px;
+}
+
+.search_doctor .inner_search_doctor ul li {
+    margin-bottom: 15px !important;
+}
+
+.search_doctor .inner_search_doctor ul li i {
+    color: #666;
+}
+
+.search_doctor .inner_search_doctor ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search_doctor .inner_search_doctor form .form-group input {
+    border: 1px solid #939191;
+    padding: 6px 15px;
+    width: 300px;
+}
+
+.search_doctor .inner_search_doctor form .form-group input::placeholder {
+    font-size: 12px;
+}
+
+.about_hospital {
+    padding: 20px 0;
+}
+
+.about_hospital .inner_about_hospital ul li i {
+    color: #666;
+}
+
+.about_hospital .inner_about_hospital ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about_hospital .inner_about_hospital ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    font-size: 12px;
+    color: #666;
+}
+
+.about_hospital .inner_about_hospital ul .btn-link {
+    color: #28b270;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.team_specialities {
+    padding: 20px 0;
+}
+
+.team_specialities .inner_team_specialities ul li i {
+    color: #666;
+}
+
+.team_specialities .inner_team_specialities ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.team_specialities .inner_team_specialities ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    font-size: 12px;
+    color: #666;
+}
+
+.team_specialities .inner_team_specialities ul .btn-link {
+    color: #28b270;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.top_doctors {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.top_doctors .similar_doctor_ttile {
+    margin-bottom: 20px;
+}
+
+.top_doctors .similar_doctor_ttile ul li i {
+    color: #666;
+}
+
+.top_doctors .similar_doctor_ttile ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.top_doctors .card {
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.top_doctors .card .user-image {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.top_doctors .card .user-content {
+    margin-top: 15px;
+}
+
+.top_doctors .card .user-content h5 {
+    font-size: 12px;
+    color: #28b270;
+}
+
+.top_doctors .card .user-content span {
+    font-size: 12px;
+    color: #28b270;
+    line-height: 16px;
+}
+
+.top_doctors .card .user-content p {
+    font-size: 12px;
+    color: #28b270;
+}
+
+.top_doctors .card .user-content .btn-link {
+    font-size: 12px;
+    line-height: 20px;
+    background: #28b270;
+    padding: 7px 10px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.top_doctors .btn-danger {
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #666;
+    font-weight: 600;
+    border: 1px solid #28b270;
+    background: transparent;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.doctor_by_depart {
+    padding: 20px 0;
+}
+
+.doctor_by_depart .similar_doctor_ttile {
+    margin-bottom: 15px;
+}
+
+.doctor_by_depart .similar_doctor_ttile ul li i {
+    color: #666;
+}
+
+.doctor_by_depart .similar_doctor_ttile ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* .doctor_by_depart ul li a {
+    font-size: 12px;
+    color: #28b270;
+    font-weight: 500;
+} */
+
+.doctor_by_depart a {
+    font-size: 12px;
+    color: #28b270;
+    font-weight: 500;
+}
+
+.apointment .inner_apointment h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infrastructure {
+    padding: 20px 0;
+}
+
+.infrastructure .inner_infrastructure ul li i {
+    color: #666;
+}
+
+.infrastructure .inner_infrastructure ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infrastructure .inner_infrastructure ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    font-size: 12px;
+    color: #666;
+}
+
+.infrastructure .inner_infrastructure ul .btn-link {
+    color: #28b270;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.hospital_location {
+    padding: 20px 0px;
+}
+
+.hospital_location .inner_hospital_location ul li {
+    font-size: 12px;
+}
+
+.hospital_location .inner_hospital_location ul li b {
+    margin-left: 25px;
+}
+
+.hospital_location .inner_hospital_location ul li i {
+    color: #666;
+    font-size: 14px;
+}
+
+.hospital_location .inner_hospital_location ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hospital_location .inner_hospital_location ul .marr {
+    list-style: disc;
+    margin-left: 19px !important;
+    font-size: 12px;
+    color: #666;
+}
+
+.hospital_adress {
+    padding: 20px 0;
+}
+
+.hospital_adress .inner_hospital_adress ul li {
+    font-size: 12px;
+    color: #666;
+}
+
+.hospital_adress .inner_hospital_adress ul li i {
+    color: #666;
+}
+
+.hospital_adress .inner_hospital_adress ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.similar_hospital {
+    padding: 20px 0;
+}
+
+.similar_hospital .inner_content {
+    margin-bottom: 15px;
+}
+
+.similar_hospital .inner_content ul li i {
+    color: #666;
+}
+
+.similar_hospital .inner_content ul li h3 {
+    color: #666;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.similar_hospital .card {
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+}
+
+.similar_hospital .card .imgbor {
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+
+.similar_hospital .card .user-content {
+    margin-top: 10px;
+}
+
+.similar_hospital .card .user-content h5 .btn-link {
+    color: #28b270;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.similar_hospital .card .user-content ul li {
+    display: inline-block;
+    margin-top: 10px !important;
+}
+
+.similar_hospital .card .user-content ul li img {
+    width: 45px;
+    height: 45px;
+}
+
+.hospital_image .fa-chevron-right {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #222;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hospital_image .fa-chevron-right:hover {
+    opacity: 1;
+}
+
+.hospital_image .fa-chevron-left {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #222;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hospital_image .fa-chevron-left:hover {
+    opacity: 1;
+}
+
+/* rating */
+.hospital_rating {
+    padding: 20px 0px;
+}
+
+.hospital_rating .inner_rating {
+    padding: 40px 0px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hospital_rating .inner_rating h3 {
+    color: #666;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hospital_rating .inner_rating ul {
+    padding: 5px 0px !important;
+}
+
+.hospital_rating .inner_rating ul li i {
+    font-size: 20px;
+    margin: 0 5px;
+    color: rgb(162, 162, 160);
+    transition: all 0.3s linear;
+}
+
+.hospital_rating .inner_rating ul li i:hover {
+    color: rgb(255, 223, 0);
+}
+
+.hospital_rating .inner_rating p {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* rating */
+
+.contact-section form .submitbtn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 15px;
+    background: #28b270;
+    color: #fff;
+    border-radius: 5px !important;
+    border: 1px solid #28b270;
+}
+
+.contact_form {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* **************************************************************
+                hospital page css end
+****************************************************************** */
+
+.hero_section {
+    padding: 200px 0;
+    background: url(../img/about_us.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}

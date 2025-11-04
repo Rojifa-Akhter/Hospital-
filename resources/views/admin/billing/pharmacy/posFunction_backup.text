@@ -1,0 +1,32 @@
+function selectItem(item, obj)
+	{
+		var total = item.item_rate;
+		var sl = $("#billing_table-body tr").length+1;
+		// $("#billing_table-body #first").remove();
+		var table_row = "<tr><td class='text-center bg-light' style='width:2%'>" + ($("#billing_table-body tr").length*1+1) + "<input class='item_id' type='hidden' name='hdn_item_id[]' value='" + item.item_id + "' ><input class='hdn_item_name' type='hidden' name='hdn_item_name[]' value='" + item.item_name + "'><input class='' type='hidden' name='delivery_date[]' value=''><input class='' type='hidden' name='item_delivery_status[]' value=''> <input class='' type='hidden' name='item_delivery_status[]' value=''><input type='hidden' id='hdn_item_urgent_fee' name='hdn_item_urgent_fee[]' readonly='readonly' /> <input class='hdn_item_type' type='hidden' name='hdn_item_type[]' value='" + item.item_type + "'> </td>  <td class='text-left'><strong>" + item.item_code + " - </strong> " + item.item_name + "</td><td><input class='form-control' type='text' name='txt_batch[]'></td><td><input class='form-control date_picker' type='text' name='txt_expire_date[]' placeholder='mm/dd/yyyy'></td><td class='text-right qnty-width'><input type='hidden' class='form-control mb-0 text-right' name='item_rate[]' id='item_rate_" + item.item_id + "' value='" + item.item_rate + "'>" + item.item_rate + "<input type='hidden' class='form-control mb-0 text-right' name='hdn_item_rate[]' id='hdn_item_rate_" + item.item_id + "' value='" + item.item_rate + "' readonly='readonly' ></td><td class='text-right qnty-width'><input type='text' class='form-control mb-0 text-right' onkeyup='billingEngine.calculateItemTotal(this);billingEngine.calculateTotal(this)' id='hdn_item_qnty_" + item.item_id + "' name='hdn_item_qnty[]' value='1' ></td><td class='text-right qnty-width'><input type='hidden' class='form-control mb-0 text-right item_total_amt' name='hdn_item_total_qnty[]' id='hdn_item_total_qnty_" + item.item_id + "' value='" + total + "' >" + total + "</td><td class='text-center' style='width:3%'><span class='btn btn-sm btn-danger' data-id='' onclick='removeTableRowOnly(this)' data-url='' title='Cancel this appointment'><i class='fas fa-times'></i></span></td></tr>";
+
+		if (sl > 0) {
+			$("#billing_table-body").append(table_row);				
+		} else {
+			$("#billing_table-body").html(table_row);
+		}
+
+		billingEngine.calculateTotal(this);
+		$('.item_typehead ').typeahead('val', '');
+		$("#item_count").html($("#billing_table-body tr").length);
+		$('.date_picker').datepicker();
+		event.stopImmediatePropagation();
+	}
+
+
+
+
+	<td><table><tr><td>Batch</td><td>EXp</td><td>Qty</td></tr><tr><td>N200</td><td>01-09-2021</td><td>50</td></tr></table></td>
+
+
+	<span Class='btn btn-sm btn-primary open-modal' data-id="''" data-action="''" data-modal='common-modal-sm' data-title='Edit Expire' title='Edit'><i class='fa fa-pencil-alt'></i></span>
+
+
+	<td><table class='table borderless'><tr><td><strong>Batch</strong></td><td><strong>EXp</strong></td><td><strong>Qty</strong></td></tr><tr><td>N200</td><td>01-09-2021</td><td>50</td></tr><tr><td>N150</td><td>11-05-2021</td><td>100</td></tr></table>
+
+	<span Class='btn btn-sm btn-primary open-modal ' data-id='' data-action='"+edit_action+"' data-modal='common-modal-sm' data-title='Edit Expire' title='Edit'><i class='fa fa-pencil-alt'></i></span></td>

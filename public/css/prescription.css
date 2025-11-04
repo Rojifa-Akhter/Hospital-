@@ -1,0 +1,251 @@
+/*@font-face {
+  font-family: SourceSansPro;
+  src: url(SourceSansPro-Regular.ttf);
+}
+*/
+@page {
+    margin: 0.8cm;
+    /*width: 450px;*/
+    padding: 0px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #60c57f;
+    text-decoration: none;
+}
+
+body {
+    /*position: relative;*/
+    margin-top: 2.5cm;
+    margin-bottom: 0cm;
+    color: #555555;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: "IBM Plex Sans,Helvetica,Arial,sans-serif";
+}
+
+header {
+    position: fixed;
+    top: 0cm;
+    left: 0cm;
+    right: 0cm;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #222;
+}
+
+footer {
+    /*position: fixed;*/
+    bottom: 0.3cm;
+    left: 0cm;
+    right: 0cm;
+    border-top: 1px solid #222;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+
+#logo {
+    float: left;
+    margin-top: 8px;
+}
+
+#logo img {
+    width: 70px;
+}
+
+#company {
+    float: right;
+    text-align: right;
+    color: #fff;
+}
+
+#details {
+    margin-bottom: 20px;
+}
+
+#client {
+    padding-left: 10px;
+    border-left: 4px solid #60c57f;
+    float: left;
+}
+
+.name {
+    font-size: 12px;
+    margin: 2px 0px;
+}
+h2.name {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#invoice {
+    float: right;
+    text-align: right;
+    /*background-color: #222;*/
+}
+/* 
+#invoice h1 {
+  color: #fff;
+  font-size: 2.4em;
+  line-height: 1em;
+  font-weight: normal;
+  margin: 0  0 10px 0;
+}
+*/
+
+#company .name {
+    color: #60c57f;
+    font-size: 2.4em;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 0 0 0 0;
+}
+
+#company span {
+    font-size: 1.1em;
+    color: #222;
+}
+
+#invoice span {
+    color: #60c57f;
+    font-size: 2.4em;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+
+#invoice .date {
+    font-size: 1.1em;
+    color: #222;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+}
+
+table th,
+table td {
+    padding: 2px 5px;
+    text-align: center;
+    border: 1px solid #222;
+    font-size: 12px;
+}
+
+table tr {
+    border-bottom: 1px solid #222;
+}
+
+table th {
+    white-space: nowrap;
+    background-color: #222;
+    color: #fff;
+    border-color: #222;
+    padding: 2px 5px;
+    /*font-weight: normal;*/
+}
+
+table td {
+    text-align: right;
+}
+
+table td h3 {
+    color: #57b223;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 0.2em 0;
+}
+
+table .no {
+    color: #ffffff;
+    font-size: 1em;
+    background: #57b223;
+}
+
+table .desc {
+    text-align: left;
+}
+
+table .unit {
+    background: #dddddd;
+}
+
+table .qty {
+}
+
+table .total {
+    background: #57b223;
+    color: #ffffff;
+}
+
+/*table td.unit,
+table td.qty,
+table td.total {
+  font-size: 1em;
+}
+*/
+/*table tbody tr:last-child td {
+    border: none;
+    }*/
+
+    table tfoot td {
+        padding: 2px 5px;
+        background: #ffffff;
+        font-size: 12px;
+        white-space: nowrap;
+        /* border-top: 1px solid #AAAAAA; */
+    }
+
+/*table tfoot tr:first-child {
+    border-top: 1px solid #222;
+    }*/
+/*
+
+table tfoot tr:last-child td {
+  color: #57B223;
+  font-size: 1.4em;
+  border-top: 1px solid #57B223; 
+
+}
+
+table tfoot tr td:first-child {
+  border: none;
+  }*/
+
+  .border-0 {
+    border: 0px !important;
+}
+
+#thanks {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+#notices {
+    padding-left: 6px;
+    border-left: 6px solid #60c57f;
+}
+
+#notices .notice {
+    font-size: 1.2em;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}

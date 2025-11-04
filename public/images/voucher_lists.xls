@@ -1,0 +1,68 @@
+
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    table td {
+        font-size: 11px;
+        padding-right:3px;
+        border:1px solid black;
+        line-height: 8px;
+    }
+     .table th {
+        font-size: 14px !important;
+    }
+    .nowrap{
+        white-space: nowrap
+    }
+</style>
+
+    <h4 style="margin-top: 20px; text-align:center; margin-bottom:0px" >UNICO</h4>
+
+    <div style="text-align:center;">
+        <h6 class="mb" style="text-transform: uppercase;margin-top: 8px; margin-bottom:0px">From Date: 08/10/2023, To Date: 08/10/2023</h6>
+        <h6 class="mb" style="text-transform: uppercase;margin-top: 8px; font-size:12px"><b>GL</b>: <span style="font-style:italic;">600130-Computer &amp; IT Equipment&#039;s</span></h6>
+    </div>
+
+
+    
+                <table style="width: 100%;" cellspacing="0">
+                <thead>
+                    <tr style="background-color: #003B61;color:white">                                    
+                        <td style="text-align:left; padding:3px; font-weight:bold;">Date</td>
+                        <td style="text-align:center; padding:3px; font-weight:bold;">Journal Id</td>
+                        <td style="text-align:left; padding:3px; font-weight:bold;">Journal Type</td>
+                        <td style="text-align:left; padding:3px; font-weight:bold;">Particulars</td>  
+                        <td style="text-align:left; padding:3px; font-weight:bold;">Sub Ledger Name</td>
+                        <td style="text-align:left; padding:3px; font-weight:bold;">Debit</td>
+                        <td style="ext-align:left; padding:3px; font-weight:bold;">Credit</td>
+                        <td style="ext-align:left; padding:3px; font-weight:bold;">Balance</td>
+                        <td style="ext-align:left; padding:3px; font-weight:bold;" class="nowrap">Naration</td>
+                        <td style="ext-align:left; padding:3px; font-weight:bold;">Note</td>
+                        <td style="ext-align:left; padding:3px; font-weight:bold;">Entry By</td>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                                                
+                    <tr>
+                        <td style="padding-left: 30px; padding-top:3px;padding-bottom: 3px; font-weight:bold;text-align:center;background-color:#003aff42" colspan="7">Opeing Balance</td>
+                        <td style="text-align: right; padding-top:3px;padding-bottom: 3px; font-style:italic;"> 1,457,908.00 </td>
+                        <td colspan="3"></td>
+
+                    </tr>
+                    
+                                        
+                    
+                    <tr>
+                        <td style="font-weight: bold; padding:3px;" colspan="5">Total</td>
+                        <td style="padding:3px;text-align:right;padding-right:3px"> <span style="font-weight: bold; font-style:italic;">0.00</span></td>
+                        <td style="padding:3px; text-align:right;padding-right:3px"> <span style="font-weight: bold; font-style:italic;">0.00</span></td>
+                        <td style="padding:3px; text-align:right;padding-right:3px"> <span style="font-weight: bold; font-style:italic;"> 1,457,908.00 </span></td>
+                        <td colspan="3" style="border-bottom:0px;border-right:0px"></td>
+                    </tr>                                                                                                      
+                           
+                </tbody>
+            </table>
+    
+

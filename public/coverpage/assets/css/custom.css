@@ -1,0 +1,542 @@
+a:hover {
+    color: #04d172;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    background: #ecfff7
+}
+
+.page-header {
+    background-color: #fff!important;
+    padding: 10px 15px!important;
+    border-radius: 5px!important;
+}
+.header.top-header {
+    width: 100%!important;
+}
+
+.footer a:not(.btn) {
+    color: #04d172;
+}
+
+.side-menu .side-menu__icon {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.tabs-menu ul li .active {
+    background: #4caf50;
+}
+
+#back-to-top {
+    background: #4caf50;
+}
+
+#accordion .chat-widget-header{
+    text-align: left;
+    padding: 15px!important;
+    text-decoration: none;
+}
+
+#accordion .card-header button:focus .chat-widget-header .accordion_arrow i{
+    transform: rotate(90deg);
+}
+
+
+.action-header {
+    background: #4caf50;
+}
+
+.chat .msg_cotainer_send {
+    background-color: #4caf50;
+}
+
+.chat .msg_cotainer_send:after {
+    border-bottom: 10px solid #4caf50;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #4caf50 !important;
+    border-color: #4caf50 !important;
+}
+.btn-outline-primary {
+    color: #4caf50;
+    background-color: transparent;
+    background-image: none;
+    border-color: #4caf50;
+    box-shadow: 0 0px 10px -5px #4caf5000;
+    color: #4caf50!important;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #8bcb8e;
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.text-primary {
+    color: #38cb89 !important;
+}
+
+.card-header:before {
+    background-color: #4caf50;
+}
+
+.side-menu__item.active,
+.side-menu__item:hover,
+.side-menu__item:focus {
+    text-decoration: none;
+    background: #ecfff7;
+    color: #1a1630;
+}
+.tabs-menu1 ul li .active {
+    border-bottom: 3px solid #04d172;
+    color: #04d172;
+}
+.page-header {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.page-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 8px !important;
+}
+
+.card-table tr th:first-child,
+.card-table tr td:first-child {
+ padding-left: 0.75rem;
+}
+
+
+.card-table tr th:last-child,
+.card-table tr td:last-child {
+    padding-right: 0.75rem;
+}
+
+
+.custom-switch-input:checked~.custom-switch-indicator {
+    background: #38cb89;
+}
+
+.msg_card_body {
+    background: url(../../images/chat.jpg);
+}
+
+.video_call{
+    position: relative;
+}
+.video1{
+    position: absolute;
+    width: 115px;
+    height: 150px;
+    background-color: #fff;
+    top: 10px;
+    right: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main-chat-body .media.flex-row-reverse .main-msg-wrapper {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.main-chat-body .media.flex-row-reverse .main-msg-wrapper:before {
+    border-bottom: 7px solid #4caf50;
+}
+
+/* multi step form */
+#heading {
+    text-transform: uppercase;
+    color: #025730;
+    font-weight: normal
+}
+
+
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+
+
+#msform fieldset {
+    background: #edfff6;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+
+fieldset .form-card {
+    min-height: 630px;
+}
+
+
+
+.instraction_for_appointment{
+    margin: 30px 0;
+}
+
+
+
+.form-card {
+    text-align: left
+}
+
+
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+
+
+#msform fieldset .form-group .form-control{
+    background-color: #fff!important;
+    border: 0;
+    height: 60px;
+    color: #4F4F4F;
+}
+
+
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #025730;
+    outline-width: 0
+}
+
+
+
+#msform .action-button {
+    width: 100px;
+    font-weight: bold;
+    color: #025730;
+    border: 2px solid #025730 ;
+    border-radius: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    outline: 0;
+}
+
+
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #025730;
+    color:white;
+    outline: 0;
+}
+
+
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #025730;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #025730 ;
+    border-radius: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    outline: 0;
+}
+
+
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #025730
+}
+
+
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+
+
+.fs-title {
+    font-size: 25px;
+    color: #025730;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+
+
+.purple-text {
+    color: #bcccc5;
+    font-weight: normal
+}
+
+
+
+.steps {
+    font-size: 25px;
+    color: #8ce6bad5;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+.doctor_card{
+    padding: 10px;
+}
+.doctor_card .doctor_img{
+    width: 190px;
+    margin-right: 10px;
+    /*border-right: 1px solid #025730;*/
+}
+
+
+
+.doctor_card .doctor_info h4{
+    font-size: 24px;
+}
+
+
+
+
+
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #98e7c1b0
+}
+
+
+
+#progressbar .active {
+    color: #025730
+}
+
+
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 33%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+
+
+#progressbar #account:before {
+    font-size: 16px;
+    padding-top: 8px;
+    content: "Schedule";
+}
+
+
+
+#progressbar #personal:before {
+    font-size: 16px;
+    padding-top: 8px;
+    content: " Patient Details";
+}
+
+
+
+#progressbar #payment:before {
+    font-size: 16px;
+    padding-top: 8px;
+    content: "Confirmation"
+
+}
+
+
+
+#progressbar li:before {
+    width: 158px;
+    height: 40px;
+    line-height: 25px;
+    display: block;
+    font-size: 10px;
+    color: #026931;
+    background: #E0FFF0;
+    border-radius: 30px;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background: #B4D18C;
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+}
+
+
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #025730;
+    color: white;
+}
+
+
+
+.progress {
+    height: 20px
+}
+
+
+
+.progress-bar {
+    background-color: #e8f0ec
+}
+
+
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+.form_label{
+    font-weight: 900;
+}
+.form_title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.confirm_label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.confirm_span{
+    font-size: 20px;
+}
+
+
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #025730;
+    color: white;
+    left: 72px;
+    top: 21px;
+}
+
+
+
+#progressbar li:after {
+    left: 72px;
+    top: 21px;
+}
+
+
+
+#progressbar li:last-child:after {
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 480px){
+    .tabs-menu ul li {
+        width: 47%;
+        margin: 5px;
+    }
+
+
+    .tab-menu-heading {
+        padding: 0px;
+    }
+
+    .tabs-menu1 ul li {
+        width: auto;
+        margin: 0;
+    }
+
+    .page-title {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .panel-body {
+        padding: 10px;
+    }
+
+    .chat-widget-header{
+        padding: 10px!important;
+    }
+
+    .card {
+        margin-bottom: 0.8rem;
+    }
+
+}
+
+
+
+.side-menu .side-menu__icon {
+    font-size: 17px!important;
+    line-height: 21px!important;
+}
+
+
+
+.side-menu .menu__icon_font_awesome {
+    font-size: 17px!important;
+    line-height: 21px!important;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 12px;
+    width: 37.5px;
+    height: 37.5px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 3px rgb(4 4 7 / 10%);
+    border: 1px solid #ebecf1;
+}
+
+
+

@@ -1,0 +1,454 @@
+<link rel="stylesheet" href="{{ asset('datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/typeaheadjs.css') }}">
+<link rel="stylesheet" href="{{ asset('node_modules/select2/dist/css/select2.min.css') }}">
+<main id="page-content">
+    <link rel="stylesheet" href="{{ asset('uhl_assets/css/uhl_style.css') }}" />
+
+    <form action="{{ route('linenLaundry.store') }}" id="v1-department-indent" method="POST">
+        @csrf
+        <section class="paitent__registration_details">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div
+                            class="row justify-content-between align-items-center bg-white border-bottom sticky-top shadow-sm">
+                            <div class="col-md-7">
+                                <h5 class="mt-2 mb-0">Linen & Laundry</h5>
+                                <small>Linen Laundry / Send to Laundry</small>
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-12">
+                                <div class="text-right">
+                                    <a rel="tab" href="{{ route('linenLaundry.index') }}" class="btn btn-success uhl_common_outline_btn">
+                                        <i class="fa fa-plus"></i>&nbsp;Laundry List
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <form action="#">
+                            <div class="card">
+                                <div class="card-body border-bottom-3 p-2">
+                                    <div class="form-row">
+
+                                        {{-- Department --}}
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="form-group form-row">
+                                                <label for="serviceunit_no_fk" class="col-sm-4 col-form-label">Department <span class="text-danger">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control form-control-sm select2" id="serviceunit_no_fk" required>
+                                                        <option value="" selected disabled>Select Department</option>
+                                                        @if (!empty($departments))
+                                                            @foreach ($departments as $row)
+                                                                <option value="{{ $row->serviceunit_no_pk }}">
+                                                                    {{ $row->serviceunit_name }}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {{-- Requisition Date --}}
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="form-group form-row">
+                                                <label for="req_date" class="col-sm-4 col-form-label">Date <span class="text-danger">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        id="req_date" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <form action="#">
+                            <div class="card">
+                                <div class="card-body border-bottom-3 p-2">
+                                    <div class="form-row">
+
+                                        {{-- Item --}}
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="form-group form-row">
+                                                <label for="item_no_fk" class="col-sm-4 col-form-label">Item Name <span class="text-danger">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control form-control-sm select2" id="item_no_fk" required>
+                                                        <option value="" selected disabled>Select Item</option>
+                                                        @if (!empty($items))
+                                                            @foreach ($items as $row)
+                                                                <option 
+                                                                    value="{{ $row->item_no_pk }}">
+                                                                    {{ substr($row->item_name, 0, 50) }}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {{-- Item QTY --}}
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                            <div class="form-group form-row">
+                                                <label for="qty" class="col-sm-4 col-form-label">QTY <span class="text-danger">*</span></label>
+                                                <div class="col-sm-8" id="pat_dev">
+                                                    <input type="number" class="form-control form-control-sm" min="0"
+                                                        id="item_qty" placeholder="QTY" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {{-- Item Remarks --}}
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group form-row">
+                                                <label for="item_remarks" class="col-sm-2 col-form-label">Item Remarks</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control form-control-sm" min="0"
+                                                        id="item_remarks" placeholder="Item Remarks" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-lg-8"></div>
+                                        <div class="col-lg-4">
+                                            <button type="button"
+                                                class="btn btn-success uhl_common_btn btn-md float-right mt-2"
+                                                id="add_item_btn">Add item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped">
+                                        <thead class="global-uhl-table-bg">
+                                            <tr>
+                                                <th style="width: 5%;">Sl.</th>
+                                                <th style="width: 25%; text-align: left;">Instrument Name</th>
+                                                <th style="width: 5%;">Quantity</th>
+                                                <th style="width: 60%;">Remarks</th>
+                                                {{-- <th style="width: 5%;">Edit</th> --}}
+                                                <th style="width: 5%;">Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id='demand_items_list'>
+                                            {{-- @if (!empty($requisition_itens))
+                                                @foreach ($requisition_itens as $item)
+                                                    <tr>
+                                                        <td class="sl-td">{{ $loop->iteration }}</td>
+                                                        <td>{{ $item->item_name }}
+                                                            <input type="hidden" value="{{ $item->item_no_fk }}"
+                                                                name="item_id_hidden[]" class="item_id">
+                                                            <input type="hidden" value="" name="item_uom[]">
+                                                            <input type="hidden" value="{{ $item->uom }}"
+                                                                name="uom_no_fk[]">
+
+                                                            <input type="hidden" value="" name="last_pp[]">
+
+                                                            <input type="hidden"
+                                                                value="{{ isset($item->urgent_ind) ? $item->urgent_ind : '' }}"
+                                                                name="urgent_ind[]">
+                                                            <input type="hidden"
+                                                                value="{{ isset($item->exact_ind) ? $item->exact_ind : '' }}"
+                                                                name="exact_ind[]">
+                                                            <input type="hidden" value=""
+                                                                name="global_stock[]">
+                                                            <input type="hidden" value=""
+                                                                name="global_stock_store[]">
+
+
+                                                        </td>
+                                                        <td class="text-left">{{ $item->uom_code }}</td>
+                                                        <td class="text-right">
+                                                            <input type="text"
+                                                                class="form-control form-control-sm tt-input text-right item_quantity"
+                                                                value="{{ $item->req_quantity }}"
+                                                                name="item_quantity[]">
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td> <input type="text"
+                                                                class=" form-control form-control-sm"
+                                                                value="{{ $item->item_remarks != '0' ? $item->item_remarks : '' }}"
+                                                                name="remarks[]">
+                                                        </td>
+                                                        <td class="text-left">
+                                                            Urgent: {{ $item->urgent_ind == 1 ? 'Y' : 'N' }}
+                                                            Exact: {{ $item->exact_ind == 1 ? 'Y' : 'N' }}
+                                                        </td>
+                                                        <td>
+                                                            <input type="text "
+                                                                class="date_picker2 form-control form-control-sm"
+                                                                value="{{ isset($item->expect_date) ? date('d-m-Y', strtotime($item->expect_date)) : '' }}"
+                                                                name="expected_date[]">
+                                                        </td>
+                                                        <td class="text-left">
+                                                            Global: 0<br>
+                                                            To Store:0
+                                                        </td>
+                                                        <td class="text-center">0</td>
+                                                        <td class="text-left">
+                                                            7 Days: 0 <br>
+                                                            30 Days: 0
+                                                        </td>
+                                                        <td class="text-center">0</td>
+                                                        <td class="text-center">0</td>
+                                                        <td class="text-center">0</td>
+                                                        <td class="text-center">
+                                                            <button class="btn btn-sm btn-primary"><i
+                                                                    class="far fa-edit"></i></button>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <button class="btn btn-sm btn-danger remove-item-btn"
+                                                                data-remove_item="{{ $item->inv_requisitiondtl_no_pk }}"><i
+                                                                    class="fas fa-trash-alt"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            @endif --}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="form-group form-row">
+                                    <label for="indat_remarks" class="col-sm-4 col-form-label">Remarks</label>
+                                    <div class="col-sm-8">
+                                        <textarea class="form-control form-control-sm" name="remarks" id="remarks" placeholder="Remarks"
+                                            row="3" style="min-height: 100px !important;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @php
+                    $response_action = route('linenLaundry.index');
+                @endphp
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="hidden" id="remove_item_id" value="">
+                                    <ul class="list-inline btn__box">
+                                        <li class="list-inline-item">
+                                            <button type="button" class="btn btn-secondary uhl_save_btn"
+                                                onclick="btnSaveUpdate(this,'','','','', dynamicFunc.afterSaveLoadPage,'{{ $response_action }}')"
+                                                @if (isset($requisition_info) && $requisition_info->indent_save_option == 'DRAFT') disabled="disabled" @endif>Save</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</main>
+
+<script type="text/javascript" src="{{ asset('datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/typeahead.bundle.js') }}"></script>
+<script type="text/javascript" src="{{ asset('node_modules/select2/dist/js/select2.min.js') }}"></script>
+
+<script type="text/javascript">
+    var currentDate = new Date();
+    $('#req_date').datepicker({
+        todayHighlight: true,
+        clearBtn: true,
+        autoclose: true,
+        format: 'dd-mm-yyyy',
+    }).datepicker('setDate', currentDate);
+
+
+
+
+
+    // $(".date_picker").datepicker({
+    //     format: 'dd-mm-yyyy',
+    //     autoclose: true,
+    // });
+
+    // $(".date_picker").on("change", function() {
+    //     $(this).focus();
+    // });
+
+    // $(".date_picker2").datepicker({
+    //     format: 'dd-mm-yyyy',
+    //     startDate: new Date(),
+    //     autoclose: true
+    // });
+
+    // $(".date_picker2").on("change", function() {
+    //     $(this).focus();
+    // });
+
+    $("body").addClass("sidebar-collapse");
+    $('.select2').select2();
+
+    var _itemList = [];
+
+    // Add Item
+    $(document).on('click', '#add_item_btn', function(e) {
+        e.preventDefault();
+
+        let serviceunit_no_fk = $('#serviceunit_no_fk').find(":selected").val();
+        let req_date = $('#req_date').val();
+
+        let item_no_fk = $('#item_no_fk').find(":selected").val();
+        let item_qty = $('#item_qty').val();
+        let item_remarks = $('#item_remarks').val();
+
+        let serviceunit_name = $('#serviceunit_no_fk').find(":selected").text();
+        let item_name = $('#item_no_fk').find(":selected").text();
+
+        if(serviceunit_no_fk == '' || item_no_fk == '' || item_qty == '' || req_date == '') {
+            alert('Please select all required data.');
+            return false;
+        }
+
+        // Check duplicate item
+        if(_itemList.indexOf(item_no_fk) == -1) {
+            _itemList.push(item_no_fk);
+        } else {
+            alert('Duplicate items!!');
+            return;
+        }
+
+        let row = `<tr>
+                    <td class='sl-td'></td>
+                    <td>${item_name}
+                        
+                        <input type="hidden" value="${serviceunit_no_fk}" name="serviceunit_no_fk" class="item_id">
+                        <input type="hidden" value="${req_date}" name="req_date" class="item_id">
+
+                        <input type="hidden" value="${item_no_fk}" name="item_no_fk[]" class="item_id">
+                        <input type="hidden" value="${item_qty}" name="item_qty[]" class="item_id">
+                        <input type="hidden" value="${item_remarks}" name="item_remarks[]" class="item_id">
+
+                    </td>
+                    <td class='text-center'>${item_qty}</td>
+                    <td class='text-center'>${item_remarks}</td>
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-danger remove-item-btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr?`;
+
+        if ($("#demand_items_list tr").length > 0) {
+            $('#demand_items_list tr:last').after(row);
+        } else {
+            $('#demand_items_list').append(row);
+        }
+
+        // $("#serviceunit_no_fk").val('');
+        $("#item_no_fk").val('');
+        $("#item_qty").val('');
+        $('#item_remarks').val('');
+        // $("#req_date").val('');
+
+        $('.sl-td').each(function(index, element) {
+            $(element).text(index + 1);
+        });
+
+        e.stopImmediatePropagation(); 
+    });
+
+    $('#item_name').on('focus', function() {
+        $('.tt-menu').css({
+            'display': 'none'
+        });
+        $('.tt-menu').removeClass('tt-open');
+        $('.tt-menu tt-dataset tt-dataset-0').html('');
+        $('.twitter-typeahead > pre').text('');
+
+        $('#item_name').val('');
+    })
+    var remove_item = [];
+    $(document).on('click', '.remove-item-btn', function() {
+        var remove_id = $(this).attr('data-remove_item');
+        remove_item.push(remove_id);
+        $(this).closest('tr').remove();
+        $('.sl-td').each(function(index, elem) {
+            $(elem).text(index + 1)
+        })
+        $('#remove_item_id').val(remove_item);
+        console.log(remove_item);
+        // poItemCalculateTotal1(this);
+    })
+
+
+    function setHiddenValue(element) {
+        $('#item_id_hidden').val($('option:selected', element).val());
+        $('#hdn_item_name').val($('option:selected', element).attr('data-item_name'));
+        $('#uom_no_fk').val($('option:selected', element).attr('data-uom_no_fk'));
+        $('#item_uom').val($('option:selected', element).attr('data-item_uom'));
+        $("#last_pp").val($('option:selected', element).attr('data-last_pp'));
+        $("#global_stock").val($('option:selected', element).attr('data-global_stock'));
+        $("#global_stock_store").val($('option:selected', element).attr('data-global_stock_store'));
+        $("#stock_store").val($('option:selected', element).attr('data-stock_store'));
+        $("#cons_qty").val($('option:selected', element).attr('data-cons_qty'));
+        $("#cons_last_month").val($('option:selected', element).attr('data-cons_last_month'));
+        $("#stock_quantity").val($('option:selected', element).attr('data-stock_quantity'));
+        $("#rol").val($('option:selected', element).attr('data-rol'));
+        $("#generic_stock").val($('option:selected', element).attr('data-generic_stock'));
+    }
+      
+    $(document).on('change','#department_to',function(){
+        // $('#hdn_department_to').val($(this).val());
+        // $(this).prop('disabled',true);
+        $('#generic_id').val('');
+        $('#hdn_generic_id').val('');
+        $('#item_type').val('').trigger('change');
+        $('#item_name').val('');
+        $('#isUrgent').prop('checked',false);
+        $('#isExact').prop('checked',false);
+        $('#item_id_hidden').val('');
+        $('#hdn_item_name').val('');
+        $('#uom_no_fk').val('');
+        $('#item_uom').val('');
+        $("#last_pp").val('');
+        $("#global_stock").val('');
+        $("#global_stock_store").val('');
+        $("#stock_store").val('');
+        $("#cons_qty").val('');
+        $("#cons_last_month").val('');
+        $("#stock_quantity").val('');
+        $("#sub_stock_quantity").val('');
+        $("#rol").val('');
+        $("#generic_stock").val('');
+        $("#Indent_remarks").val('');
+        $("#item_remarks").val('');
+        $("#quantity").val('');
+        $("#expected_date").val('');
+        $("#demand_items_list").html('');
+    });
+</script>

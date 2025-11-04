@@ -1,0 +1,1348 @@
+
+Warning: Module 'oci8' already loaded in Unknown on line 0
+@php
+    $doctor = (isset($data) && (!empty($data))) ? $data : [];
+
+    $doctor_code = ($doctor) ? $doctor->person_code : '';
+    $doctor_no_pk = ($doctor) ? $doctor->person_no_pk : '';
+    $doctor_salutation = ($doctor) ? $doctor->salutation : '';
+    $doctor_first_name = ($doctor) ? $doctor->fname : '';
+    $doctor_last_name = ($doctor) ? $doctor->lname : '';
+    $doctor_age = ($doctor) ? $doctor->age : '';
+    $doctor_date_of_birth = ($doctor) ? date('d-m-Y',strtotime($doctor->dob)) : '';
+    $place_of_birth = ($doctor) ? $doctor->place_of_birth : '';
+    $doctor_address1 = ($doctor) ? $doctor->emergency_contact_addr : '';
+    $doctor_address2 = ($doctor) ? $doctor->present_addr : '';
+    $doctor_address3 = ($doctor) ? $doctor->permanent_addr : '';
+    $doctor_nid = ($doctor) ? $doctor->national_id : '';
+    $doctor_mobile = ($doctor) ? $doctor->phone_mobile : '';
+    $doctor_father = ($doctor) ? $doctor->father_name : '';
+    $doctor_mother = ($doctor) ? $doctor->mother_name : '';
+    $doctor_spouse = ($doctor) ? $doctor->spouse_name : '';
+    $email_personal = ($doctor) ? $doctor->email_personal : '';
+    $phone_mobile = ($doctor) ? $doctor->phone_mobile : '';
+    $doctor_blood_group = ($doctor) ? $doctor->blood_group_lookup_no_fk : '';
+    $doctor_job_type = ($doctor) ? $doctor->job_type_lookup_no_fk : '';
+    $doctor_hr_type = ($doctor) ? $doctor->hr_type_lookup_no_fk : '';
+    $doctor_emp_type = ($doctor) ? $doctor->emp_type_lookup_no_fk : '';
+    $doctor_job_title = ($doctor) ? $doctor->jobtitle_lookup_no_fk : '';
+    $department = ($doctor) ? $doctor->serviceunit_no_fk : '';
+    $doctor_join_date = ($doctor) ? date('d/m/Y',strtotime($doctor->join_date)) : '';
+    $doctor_lic_no = ($doctor) ? $doctor->doc_lic_no : '';
+    $doctor_card_number = ($doctor) ? $doctor->card_no : '';
+    $present_address = ($doctor) ? $doctor->pe_addr1 : '';
+    $doctor_parmanent_address = ($doctor) ? $doctor->pr_addr1 : '';
+    $emergency_contact_address = ($doctor) ? $doctor->emergency_contact_addr : '';
+    $doctor_nationality = ($doctor) ? $doctor->nationality : '';
+    $doctor_passport_no = ($doctor) ? $doctor->passport_no : '';
+    $doctor_gender = ($doctor) ? $doctor->gender_lookup_no_fk : '';
+    $doctor_marital_status = ($doctor) ? $doctor->marital_lookup_no_fk : '';
+    $doctor_religion = ($doctor) ? $doctor->religion_lookup_no_fk : '';
+    $doctor_permanent_district = ($doctor) ? $doctor->pe_district_lookup_no_fk : '';
+    $doctor_present_district = ($doctor) ? $doctor->pr_district_lookup_no_fk : '';
+    $doctor_emergency_contact_name = ($doctor) ? $doctor->emergency_contact_name : '';
+    $doctor_emergency_contact_address = ($doctor) ? $doctor->emergency_contact_addr : '';
+    $doctor_emergency_contact_relation = ($doctor) ? $doctor->relation_lookup_pk_no : '';
+    $doctor_emergency_contact_contact = ($doctor) ? $doctor->emergency_contact_contact : '';
+    $doctor_specialization = ($doctor) ? $doctor->specialization_lookup_no_fk : '';
+    $serviceunit_no_pk = ($doctor) ? $doctor->serviceunit_no_fk : '';
+    $full_name_bangla = ($doctor) ? $doctor->full_name_bangla : '';
+    $doctor_degree1 = ($doctor) ? $doctor->degree1 : '';
+    $doctor_degree2 = ($doctor) ? $doctor->degree2 : '';
+    $doctor_degree3 = ($doctor) ? $doctor->degree3 : '';
+    $doctor_degree4 = ($doctor) ? $doctor->degree4 : '';
+    $salary = (isset($salaryInfo) && (!empty($salaryInfo))) ? $salaryInfo : [];
+    $gross_salary = ($salary) ? $salary->gross_salary : '';
+    $basic_salary = ($salary) ? $salary->basic_salary : '';
+    $medical_allowance = ($salary) ? $salary->medical_allowance : '';
+    $house_rent = ($salary) ? $salary->house_rent : '';
+    $attendance_bonus = ($salary) ? $salary->attendance_bonus : '';
+    $conveyance_allowance = ($salary) ? $salary->conveyance_allowance : '';
+    $utility_allowance = ($salary) ? $salary->utility_allowance : '';
+    $other_allowance = ($salary) ? $salary->other_allowance : '';
+    $pf_presonnel_amount = ($salary) ? $salary->pf_presonnel_amount : '';
+    $salary_no_pk = ($salary) ? $salary->salary_no_pk : '';
+@endphp
+<link rel="stylesheet" href="{{ asset('node_modules/select2/dist/css/select2.min.css')}}">
+<link rel="stylesheet" href="{{ asset('datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+
+<form method="post" id="doctor_form" action="{{ route('doctor.store') }}">
+    @csrf
+    <input type="hidden" name="id" value="{{ $doctor_no_pk }}">
+
+    <div class="form-row">
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title"
+                               data-toggle="collapse" data-target="#basic_info" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong>1. Basic Information</strong> (Introduce a Employee )
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="basic_info" class="collapse show p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="card-body pt-2">
+                                        <div class="form-group row">
+                                            <label for="doctor_name" class="col-sm-3 col-form-label col-form-label-sm">UID
+                                                <span
+                                                    class="text-danger">*</span></label>
+
+                                            <div class="col-sm-5">
+                                                <div class="input-group">
+                                                    <input type="text"
+                                                           class="form-control form-control-sm text-capitalize required"
+                                                           id="uid" name="uid" value="{{$doctor_code}}"
+                                                           placeholder="Doctor ID"
+                                                           required="required">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+
+                                            <label for="doctor_name" class="col-sm-3 col-form-label col-form-label-sm">Employee
+                                                Name
+                                                <span class="text-danger">*</span></label>
+                                            <div class="col-sm-9">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <select class="form-control font_size_12 m-auto"
+                                                                id="doctor_salutation"
+                                                                name="doctor_salutation">
+                                                            <option value="MR.">MR.
+                                                            </option>
+                                                            <option value="MRS.">MRS.
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text"
+                                                           class="form-control form-control-sm text-capitalize required"
+                                                           id="doctor_first_name" name="doctor_first_name"
+                                                           value="{{$doctor_first_name}}"
+                                                           placeholder="First Name"
+                                                           onkeypress="return /^[a-zA-Z\s]+$/i.test(event.key)"
+                                                           required="required">
+
+                                                    <input type="text"
+                                                           class="form-control form-control-sm text-capitalize required"
+                                                           id="doctor_last_name" name="doctor_last_name"
+                                                           value="{{$doctor_last_name}}"
+                                                           placeholder="Last Name"
+                                                           onkeypress="return /^[a-zA-Z\s]+$/i.test(event.key)">
+                                                </div>
+                                            </div>
+                                            <label for="doctor_name" class="col-sm-3 col-form-label col-form-label-sm">
+                                                নাম (বাংলা)
+                                                <span class="text-danger">*</span></label>
+                                            <div class="col-sm-9">
+                                                <div class="input-group">
+
+                                                    <input type="text"
+                                                           class="form-control form-control-sm text-capitalize "
+                                                           id="doctor_full_name_bangla" name="doctor_full_name_bangla"
+                                                           value="{{ $full_name_bangla }}"
+                                                           placeholder="Doctor Full Name"
+                                                           required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="doctor_gender"
+                                                   class="col-sm-3 col-form-label col-form-label-sm">Gender
+                                                <span class="text-danger">*</span></label>
+                                            <div class="col-sm-3">
+                                                <select class="form-control font_size_12 m-auto required"
+                                                        id="doctor_gender"
+                                                        name="doctor_gender">
+                                                    <option value="">Select Gender</option>
+                                                    @if(isset($gender))
+                                                        @foreach($gender as $key => $value )
+                                                            <option value="{{$key}}"
+                                                                    @if($doctor_gender == $key) selected @endif>
+                                                                {{$value}}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+
+                                                </select>
+                                            </div>
+                                            <label for="doctor_religion"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Religion <span
+                                                    class="text-danger">*</span> </label>
+                                            <div class="col-sm-4">
+                                                <select class="form-control font_size_12 m-auto required" id="doctor_religion"
+                                                        name="doctor_religion" required>
+                                                    <option value="">Select Religion</option>
+                                                    @if(isset($religion))
+                                                        @foreach($religion as $key => $value )
+                                                            <option value="{{$key}}"
+                                                                    @if($doctor_religion == $key) selected @endif>
+                                                                {{$value}}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="doctor_date_of_birth"
+                                                   class="col-sm-3 col-form-label col-form-label-sm">Date
+                                                of
+                                                Birth <span
+                                                    class="text-danger">*</span> </label>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control form-control-sm date_picker"
+                                                       id="doctor_date_of_birth" name="doctor_date_of_birth"
+                                                       value="{{$doctor_date_of_birth}}"
+                                                       placeholder="DD/MM/YYYY" required>
+                                            </div>
+
+                                            <label for="place_of_birth"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Place
+                                                of
+                                                Birth</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="place_of_birth"
+                                                       name="place_of_birth" value="{{$place_of_birth}}"
+                                                       placeholder="Place of Birth">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="doctor_marital_status"
+                                                   class="col-sm-3 col-form-label col-form-label-sm">Marital
+                                                Status</label>
+                                            <div class="col-sm-3">
+                                                <select class="form-control font_size_12 m-auto required"
+                                                        id="doctor_marital_status"
+                                                        name="doctor_marital_status">
+                                                    <option value="">Select Marital Status</option>
+                                                    @if(isset($marital_status))
+                                                        @foreach($marital_status as $key => $value )
+                                                            <option value="{{$key}}"
+                                                                    @if($doctor_marital_status == $key) selected @endif>
+                                                                {{$value}}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </div>
+                                            <label for="doctor_blood_group"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Blood
+                                                Group</label>
+                                            <div class="col-sm-4">
+                                                <select class="form-control font_size_12 m-auto" id="doctor_blood_group"
+                                                        name="doctor_blood_group">
+                                                    <option value="0">Select Blood Group</option>
+                                                    @if(isset($bloodg))
+                                                        @foreach($bloodg as $key => $value )
+                                                            <option value="{{$key}}"
+                                                                    @if($doctor_blood_group == $key) selected @endif>
+                                                                {{$value}}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="doctor_passport_no"
+                                                   class="col-sm-3 col-form-label col-form-label-sm">Passport/NID</label>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_passport_no"
+                                                       name="doctor_passport_no" value="{{$doctor_passport_no}}"
+                                                       placeholder="Passport NID No">
+                                            </div>
+
+                                            <label for="doctor_nationality"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Nationality</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control form-control-sm text-capitalize"
+                                                       id="doctor_nationality" name="doctor_nationality"
+                                                       value="{{$doctor_nationality}}"
+                                                       placeholder="Nationality">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="doctor_passport_no"
+                                                   class="col-sm-3 col-form-label col-form-label-sm">Mobile Number</label>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_mobile_no"
+                                                       name="doctor_mobile_no" value="{{$phone_mobile}}"
+                                                       placeholder="Mobile No">
+                                            </div>
+
+                                            <label for="doctor_nationality"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                            <div class="col-sm-4">
+                                                <input type="email" class="form-control form-control-sm text-capitalize"
+                                                       id="doctor_email" name="doctor_email"
+                                                       value="{{$email_personal}}"
+                                                       placeholder="Doctor Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-body pt-2">
+                                        <div class="form-group row">
+                                            <div class="col-sm-12">
+                                                {{-- <input type="file" class="form-control" id="doctor_photo" name="doctor_photo" > --}}
+                                                <div class="avatar-upload">
+                                                    <div class="avatar-edit">
+                                                        <input type="file" id="imageUpload" name="doc_photo"
+                                                               accept=".png, .jpg, .jpeg">
+                                                        <label for="imageUpload"></label>
+                                                    </div>
+                                                    <div class="avatar-preview">
+                                                        <div id="imagePreview"
+                                                             style="background-image: url('../../public/images/doctor.png');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title "
+                               data-toggle="collapse" data-target="#address_info" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong> 2. Address Information</strong>
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="address_info" class="collapse p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body pt-2">
+                                        <div class="form-group row">
+                                            <label for="present_address"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Present <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="col-sm-3">
+                                                <input type="text"
+                                                       class="form-control form-control-sm same_as_pre_add required"
+                                                       id="present_address" name="present_address"
+                                                       value="{{$present_address}}"
+                                                       placeholder="Present Address">
+                                            </div>
+
+                                            <label for="doctor_present_district"
+                                                   class="col-sm-1 col-form-label col-form-label-sm">District</label>
+                                            <div class="col-sm-3">
+                                                <select class="form-control font_size_12 m-auto"
+                                                        id="doctor_present_district" name="doctor_present_district">
+                                                    <option value="">Select District</option>
+                                                    @if(!empty($district))
+                                                        @foreach($district as $key=>$value)
+                                                            <option value="{{$key}}"
+                                                                    @if($doctor_present_district == $key) selected @endif>
+                                                                {{$value}}
+                                                            </option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </div>
+
+                                            <label for="post_code"
+                                                   class="col-sm-1 pl-1 col-form-label col-form-label-sm">Country
+                                            </label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm "
+                                                       id="present_country" name="present_country" value=""
+                                                       placeholder="Country">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group row">
+
+                                            <label for="parmanent_address"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Permanent </label>
+                                            <div class="col-sm-3">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend" title="Same as Prensent Address">
+                                                        <div class="input-group-text">
+                                                            <input type="checkbox"
+                                                                   aria-label="Checkbox for following text input"
+                                                                   class="same_pre_and_par">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text"
+                                                           class="form-control form-control-sm same_as_par_add"
+                                                           id="parmanent_address" name="doctor_parmanent_address"
+                                                           value="" placeholder="Parmanent Address">
+                                                </div>
+                                            </div>
+                                            <label for="doctor_par_district"
+                                                   class="col-sm-1 col-form-label col-form-label-sm">District</label>
+                                            <div class="col-sm-3">
+                                                <select class="form-control font_size_12 m-auto"
+                                                        id="doctor_par_district" name="doctor_par_district">
+                                                    <option value="0">Select District</option>
+                                                    @if(!empty($district))
+                                                        @foreach($district as $key=>$value)
+                                                            <option value="{{$key}}">{{$value}}</option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </div>
+
+                                            <label for="post_code"
+                                                   class="col-sm-1 pl-1 col-form-label col-form-label-sm">Country
+                                            </label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm "
+                                                       id="parmanent_country" name="parmanent_country" value=""
+                                                       placeholder="Country">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title"
+                               data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong>3. Family Info</strong>
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="collapseOne" class="collapse  p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body pt-2">
+                                        <div class="form-group row">
+                                            <label for="doctor_father"
+                                                   class="col-sm-1 col-form-label col-form-label-sm">Father</label>
+                                            <div class="col-sm-5">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_father" name="doctor_father" value=""
+                                                       placeholder="Father Name">
+                                            </div>
+
+                                            <label for="doctor_father_bangla"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">পিতার নাম (বাংলা)</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_father_bangla" name="doctor_father_bangla" value=""
+                                                       placeholder="িতার নাম">
+                                            </div>
+
+                                            <label for="doctor_mother"
+                                                   class="col-sm-1 col-form-label col-form-label-sm">Mother</label>
+                                            <div class="col-sm-5">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_mother" name="doctor_mother" value=""
+                                                       placeholder="Mother Name">
+                                            </div>
+
+                                            <label for="doctor_mother_bangla"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">মাতার নাম (বাংলা)</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_mother_bangla" name="doctor_mother_bangla" value=""
+                                                       placeholder="মাতার নাম">
+                                            </div>
+
+
+                                            <label for="doctor_mother"
+                                                   class="col-sm-1 col-form-label col-form-label-sm">Spouse</label>
+                                            <div class="col-sm-5">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_mother" name="doctor_spouse" value=""
+                                                       placeholder="Spouse Name">
+                                            </div>
+
+                                            <label for="doctor_mother"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Spouse(In
+                                                Bengali)</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control form-control-sm"
+                                                       id="doctor_mother" name="doctor_spouse_bangla" value=""
+                                                       placeholder="Spouse Name">
+                                            </div>
+                                        </div>
+
+                                        {{--
+                                            <div class="form-group row" id="spouse" style="display: none;">
+                                                <label for="doctor_spouse"
+                                                class="col-sm-3 col-form-label col-form-label-sm">Spouse</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                    id="doctor_spouse" name="doctor_spouse" value=""
+                                                    placeholder="Spouse Name">
+                                                </div>
+                                            </div>
+                                            --}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title"
+                               data-toggle="collapse" data-target="#education_qualification" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong> 4. Education & Qualification</strong>
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="education_qualification" class="collapse p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body pt-2">
+                                        <div class=" rounded ">
+                                            <h5 class="mb-0 mt-0">Degree</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="doctor_degree1"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Degree 1</label>
+                                            <div class="col-sm-4">
+                                <span class="twitter-typeahead"
+                                      style="position: relative; display: inline-block;"><input
+                                        type="text" class="form-control form-control-sm tt-hint"
+                                        value=""
+                                        style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(245, 248, 250) none repeat scroll 0% 0% padding-box;"
+                                        readonly="" autocomplete="off" spellcheck="false" tabindex="-1"
+                                        dir="ltr"><input type="text"
+                                                         class="form-control form-control-sm tt-input"
+                                                         id="doctor_degree1" name="doctor_degree1"
+                                                         value="{{$doctor_degree1}}" placeholder="Degree 1"
+                                                         autocomplete="off" spellcheck="false"
+                                                         dir="auto"
+                                                         style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                        aria-hidden="true"
+                                        style="position: absolute; visibility: hidden; white-space: pre; font-family: IBM Plex Sans, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div
+                                        class="tt-menu"
+                                        style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                            class="tt-dataset tt-dataset-0"></div></div></span>
+                                            </div>
+
+                                            <label for="doctor_degree2"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Degree 2</label>
+                                            <div class="col-sm-4">
+                                <span class="twitter-typeahead"
+                                      style="position: relative; display: inline-block;"><input
+                                        type="text" class="form-control form-control-sm tt-hint"
+                                        value=""
+                                        style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(245, 248, 250) none repeat scroll 0% 0% padding-box;"
+                                        readonly="" autocomplete="off" spellcheck="false" tabindex="-1"
+                                        dir="ltr"><input type="text"
+                                                         class="form-control form-control-sm tt-input"
+                                                         id="doctor_degree2" name="doctor_degree2"
+                                                         value="{{$doctor_degree2}}" placeholder="Degree 2"
+                                                         autocomplete="off" spellcheck="false"
+                                                         dir="auto"
+                                                         style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                        aria-hidden="true"
+                                        style="position: absolute; visibility: hidden; white-space: pre; font-family: IBM Plex Sans, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div
+                                        class="tt-menu"
+                                        style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                            class="tt-dataset tt-dataset-1"></div></div></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="doctor_degree3"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Degree 3</label>
+                                            <div class="col-sm-4">
+                                <span class="twitter-typeahead"
+                                      style="position: relative; display: inline-block;"><input
+                                        type="text" class="form-control form-control-sm tt-hint"
+                                        value="{{$doctor_degree3}}"
+                                        style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(245, 248, 250) none repeat scroll 0% 0% padding-box;"
+                                        readonly="" autocomplete="off" spellcheck="false" tabindex="-1"
+                                        dir="ltr"><input type="text"
+                                                         class="form-control form-control-sm tt-input"
+                                                         id="doctor_degree3" name="doctor_degree3"
+                                                         value="" placeholder="Degree 3"
+                                                         autocomplete="off" spellcheck="false"
+                                                         dir="auto"
+                                                         style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                        aria-hidden="true"
+                                        style="position: absolute; visibility: hidden; white-space: pre; font-family: IBM Plex Sans, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div
+                                        class="tt-menu"
+                                        style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                            class="tt-dataset tt-dataset-2"></div></div></span>
+                                            </div>
+
+                                            <label for="doctor_degree4"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Degree 4</label>
+                                            <div class="col-sm-4">
+                                <span class="twitter-typeahead"
+                                      style="position: relative; display: inline-block;"><input
+                                        type="text" class="form-control form-control-sm tt-hint"
+                                        value="{{$doctor_degree4}}"
+                                        style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(245, 248, 250) none repeat scroll 0% 0% padding-box;"
+                                        readonly="" autocomplete="off" spellcheck="false" tabindex="-1"
+                                        dir="ltr"><input type="text"
+                                                         class="form-control form-control-sm tt-input"
+                                                         id="doctor_degree4" name="doctor_degree4"
+                                                         value="" placeholder="Degree 4"
+                                                         autocomplete="off" spellcheck="false"
+                                                         dir="auto"
+                                                         style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                        aria-hidden="true"
+                                        style="position: absolute; visibility: hidden; white-space: pre; font-family: IBM Plex Sans, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div
+                                        class="tt-menu"
+                                        style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                            class="tt-dataset tt-dataset-3"></div></div></span>
+                                            </div>
+                                        </div>
+                                        <div class=" rounded ">
+                                            <h5 class="mb-0 mt-0">Education</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <table class="table border-0 mt-2 mb-0" id="mytable">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="p-0 border-0 w-35">Degree Name</th>
+                                                        <th class="p-0 border-0 w-35">Institution</th>
+                                                        <th class="p-0 border-0 w-35">Result</th>
+                                                        <th class="p-0 border-0 w-35">Passing Year</th>
+                                                        <th class="p-0 border-0 w-35">Board</th>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="data-append-to">
+                                                    <tr id="0">
+                                                        <td>
+                                                            <input type="text" class="form-control" name="name[]"
+                                                                   placeholder="Degree Name">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control"
+                                                                   name="institution[]" placeholder="Institution">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" name="result[]"
+                                                                   placeholder="Result">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" name="p_year[]"
+                                                                   placeholder="Passing Year">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="form-control" name="board[]"
+                                                                   placeholder="Board">
+                                                        </td>
+                                                        <td id="med_td_action_0"><span onclick="addMedRow(this)"
+                                                                                       class="btn btn-sm btn-success"> +Add  </span>
+                                                        </td>
+                                                    </tr>
+                                                    @php
+                                                        $tableId =2;
+                                                    @endphp
+
+                                                    @if(!empty($educationInfo))
+                                                        @foreach($educationInfo as $education)
+                                                            <tr id="{{$tableId}}">
+                                                                <td>
+                                                                    <input type="text" class="form-control"
+                                                                           name="name[]"
+                                                                           placeholder="Degree Name"
+                                                                           value="{{$education->degree_name}}">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control"
+                                                                           name="institution[]"
+                                                                           placeholder="Institution"
+                                                                           value="{{$education->institute_name}}">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control"
+                                                                           name="result[]"
+                                                                           placeholder="Result"
+                                                                           value="{{$education->result_text}}">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control"
+                                                                           name="p_year[]"
+                                                                           placeholder="Passing Year"
+                                                                           value="{{$education->passing_year}}">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" class="form-control"
+                                                                           name="board[]"
+                                                                           placeholder="Board"
+                                                                           value="{{$education->board_university}}">
+                                                                </td>
+                                                                <td id="med_td_action_{{$tableId}}"><span
+                                                                        onclick="removeTableRowOnly(this)"
+                                                                        class="btn btn-sm btn-danger"> <i
+                                                                            class='fa fa-times'></i>   </span>
+                                                                </td>
+                                                            </tr>
+                                                            <td>
+                                                                <input type="hidden" name="hidden_temp_edu_id[]"
+                                                                       value="{{$education->education_no_pk}}">
+                                                            </td>
+                                                            @php
+                                                                $tableId =$tableId+1;
+                                                            @endphp
+
+                                                        @endforeach
+                                                    @endif
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title"
+                               data-toggle="collapse" data-target="#office_info" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong>5. Office Information</strong>
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="office_info" class="collapse  p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body pt-2">
+                                        <div class="card-body pt-2">
+                                            <div class="form-group row">
+                                                <label for="doctor_ser_unit"
+                                                       class="col-sm-2 col-form-label col-form-label-sm ">Service Unit
+                                                    <span class="text-danger">*</span></label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto select2"
+                                                            id="doctor_ser_unit" name="doctor_ser_unit" required>
+                                                        <option value="">Select Service Unit</option>
+                                                        @if(!empty($service_unit))
+                                                            @foreach($service_unit as $service )
+                                                                <option value="{{$service->serviceunit_no_pk}}"
+                                                                        @if($service->serviceunit_no_pk == $serviceunit_no_pk) selected @endif>
+                                                                    {{strtoupper($service->serviceunit_name)}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                                <label for="doctor_job_type"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Job Type <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto required"
+                                                            id="doctor_job_type" name="doctor_job_type">
+                                                        <option value="">Select Job Type</option>
+                                                        @if(isset($job_type))
+                                                            @foreach($job_type as $key => $val)
+                                                                <option value="{{$key}}"
+                                                                        @if($doctor_job_type == $key) selected @endif>
+                                                                    {{$val}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="accommodation" id="accommodation"
+                                                           value="1">
+                                                </div>
+                                                <label for="accommodation"
+                                                       class="col-sm-2 pl-1 ml-0">Accommodation </label>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="doctor_specialization"
+                                                       class="col-sm-2 col-form-label col-form-label-sm ">Specialization
+                                                    <span class="text-danger">*</span></label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto select2"
+                                                            id="doctor_specialization" name="doctor_specialization" >
+                                                        <option value="">Select Specialization</option>
+                                                        @if(isset($specialization))
+                                                            @foreach($specialization as $key => $value )
+                                                                <option value="{{$key}}"
+                                                                        @if($doctor_specialization == $key) selected @endif>
+
+                                                                    {{strtoupper($value)}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                                <label for="department"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Department</label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto required"
+                                                            id="department" name="department">
+                                                        <option value="">Select Department</option>
+                                                        @if(isset($dept))
+                                                            @foreach($dept as $key => $val)
+                                                                <option value="{{$key}}"
+                                                                        @if($doctor_job_title == $key) selected @endif>
+                                                                    {{$val}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="transport_ind" value="1"
+                                                           id="transport_ind">
+                                                </div>
+                                                <label for="transport_ind" class="col-sm-2 ml-0 pl-1">Transport </label>
+
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="doctor_job_title"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Job
+                                                    Title</label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto"
+                                                            id="doctor_job_title" name="doctor_job_title">
+                                                        <option value="0">Select Job Title</option>
+                                                        @if(isset($job_title))
+                                                            @foreach($job_title as $key => $val)
+                                                                <option value="{{$key}}"
+                                                                        @if($doctor_job_title == $key) selected @endif>
+                                                                    {{$val}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                                <label for="doctor_hr_type"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">HR Type</label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto" id="doctor_hr_type"
+                                                            name="doctor_hr_type">
+                                                        <option value="0">Select HR Type</option>
+                                                        @if(isset($hr_type))
+                                                            @foreach($hr_type as $key => $val)
+                                                                <option value="{{$key}}"
+                                                                        @if($doctor_hr_type == $key) selected @endif>
+                                                                    {{$val}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+
+                                                    </select>
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="provident_fund_type" value="1"
+                                                           id="provident_fund_type">
+                                                </div>
+                                                <label for="provident_fund_type" class="col-sm-2 ml-0 pl-1">Provident
+                                                    fund
+                                                </label>
+
+
+                                            </div>
+
+
+                                            <div class="form-group row">
+                                                <label for="doctor_join_date"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Join
+                                                    Date</label>
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="form-control form-control-sm date_picker"
+                                                           id="doctor_join_date" name="doctor_join_date" value=""
+                                                           placeholder="DD/MM/YYYY">
+                                                </div>
+                                                <label for="doctor_card_number"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Card
+                                                    Number</label>
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                           id="doctor_card_number" name="doctor_card_number" value=" "
+                                                           placeholder="Card Number">
+                                                </div>
+                                                <div class="">
+                                                    <input type="checkbox" name="ot_payable_ind" value="1"
+                                                           id="ot_payable_ind">
+                                                </div>
+                                                <label for="ot_payable_ind" class="col-sm-2 ml-0 pl-1">OT Payable
+                                                </label>
+
+
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="emp_type" class="col-sm-2 col-form-label col-form-label-sm">Emp.
+                                                    Type</label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto" id="emp_type"
+                                                            name="emp_type">
+                                                        <option value="0" selected="selected">Select Emp. Type</option>
+                                                        @if(isset($emp_type))
+                                                            @foreach($emp_type as $key => $val)
+                                                                <option value="{{$key}}"
+                                                                        @if($doctor_emp_type == $key) selected @endif>
+                                                                    {{$val}}
+                                                                </option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
+                                                </div>
+                                                <label for="doctor_lic_no"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Professional
+                                                    License No</label>
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                           id="doctor_lic_no" name="doctor_lic_no" value=""
+                                                           placeholder="Professional License No">
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="form-group row">
+                                                <label for="emp_type" class="col-sm-2 col-form-label col-form-label-sm">Marketing
+                                                    Type</label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto" id="marketing_type"
+                                                            name="marketing_type">
+                                                        <option value="0" selected="selected">Select Marketing Type
+                                                        </option>
+                                                        <option value="1">Referal</option>
+                                                        <option value="2">Agent</option>
+
+                                                    </select>
+                                                </div>
+                                                <label for="grade_no_fk"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">Select
+                                                    Grade</label>
+                                                <div class="col-sm-2">
+                                                    <select class="form-control font_size_12 m-auto" id="grade_no_fk"
+                                                            name="grade_no_fk">
+                                                        <option value="0" selected="selected">Select Grade Type
+                                                        </option>
+                                                        @if(!empty($grade))
+                                                            @foreach($grade as $value)
+                                                                <option
+                                                                    value="{{ $value->grade_no_pk }}">{{ $value->grade_name }}</option>
+                                                            @endforeach
+                                                        @endif
+
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group row">
+
+                                                <label for="inactivate_resson"
+                                                       class="col-sm-2 col-form-label col-form-label-sm">In Active
+                                                    Reason</label>
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="form-control form-control-sm datepicker"
+                                                           id="inactivate_date" name="inactivate_date" value=""
+                                                           placeholder="DD/MM/YYYY">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                           id="inactivate_resson" name="inactivate_resson" value=""
+                                                           placeholder="In Active Reason">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title"
+                               data-toggle="collapse" data-target="#salary_info" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong>6. Salary Information</strong>
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="salary_info" class="collapse p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+                            <input type="hidden" value="{{$salary_no_pk}}" name="salary_no_pk">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body pt-2">
+                                        <div class="form-group row">
+                                            <label for="gross_salary"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Gross Salary</label>
+                                            <div class="col-sm-2">
+                                                <input type="text"
+                                                       class="form-control form-control-sm same_as_pre_add "
+                                                       id="gross_salary" name="gross_salary" value="{{$gross_salary}}"
+                                                       placeholder="Gross Salary">
+                                            </div>
+                                            <label for="post_code"
+                                                   class="col-sm-2 pl-1 col-form-label col-form-label-sm">
+                                                Basic Salary</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm same_as_pre_add"
+                                                       id="post_code" name="post_code" value="{{$basic_salary}}"
+                                                       placeholder="Basic Salary">
+                                            </div>
+                                            <label for="medical_allowance"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Medical</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm same_as_pre_add"
+                                                       id="medical_allowance" name="medical_allowance"
+                                                       value="{{$medical_allowance}}"
+                                                       placeholder="Medical Allowance">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+
+                                            <label for="doctor_parmanent_address"
+                                                   class="col-sm-2 col-form-label col-form-label-sm ml-0">House
+                                                Rent</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm "
+                                                       id="house_rent" name="house_rent" value="{{$house_rent}}"
+                                                       placeholder="House Rent">
+                                            </div>
+                                            <label for="attendance_bonus"
+                                                   class="col-sm-2 pl-1 col-form-label col-form-label-sm">
+                                                Attendance Bonus</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm "
+                                                       id="attendance_bonus" name="attendance_bonus"
+                                                       value="{{$attendance_bonus}}"
+                                                       placeholder="Attendance Bonus">
+                                            </div>
+                                            <label for="conveyance_allowance"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Conveyance
+                                                Allow</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm "
+                                                       id="conveyance_allowance" name="conveyance_allowance"
+                                                       value="{{$conveyance_allowance}}"
+                                                       placeholder="Conveyance Allow">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <label for="utility_allowance"
+                                                   class="col-sm-2 col-form-label col-form-label-sm ml-0">Utilites</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm same_as_pre_add"
+                                                       id="utility_allowance" name="utility_allowance"
+                                                       value="{{$utility_allowance}}"
+                                                       placeholder="Utilites">
+                                            </div>
+                                            <label for="other_allowance"
+                                                   class="col-sm-2 pl-1 col-form-label col-form-label-sm">
+                                                Other Allowance</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm same_as_pre_add"
+                                                       id="other_allowance" name="other_allowance"
+                                                       value="{{$other_allowance}}"
+                                                       placeholder="Other Allowance">
+                                            </div>
+                                            <label for="total_wages"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Total Wages</label>
+                                            <div class="col-sm-2">
+                                                <input type="text" class="form-control form-control-sm same_as_pre_add"
+                                                       id="total_wages" name="total_wages"
+                                                       value="{{$pf_presonnel_amount}}"
+                                                       placeholder="Total Wages">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="employee_registration">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="btn btn-link btn-block text-left bg-primary accordion_title"
+                               data-toggle="collapse" data-target="#login_info" aria-expanded="true"
+                               aria-controls="collapseOne">
+                                <strong> 7. Login Information </strong>
+
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+
+                        <div id="login_info" class="collapse p-1" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-body pt-2">
+                                        <div class="form-group row">
+                                            <label for="user_name"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">User Name <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="col-sm-3">
+                                                <input type="text"
+                                                       class="form-control form-control-sm same_as_pre_add required"
+                                                       id="user_name" name="user_name" value=""
+                                                       placeholder="User Name">
+                                            </div>
+                                            <label for="post_code"
+                                                   class="col-sm-1 pl-1 col-form-label col-form-label-sm">
+                                                Password</label>
+                                            <div class="col-sm-2">
+                                                <input type="password"
+                                                       class="form-control form-control-sm same_as_pre_add"
+                                                       id="password" name="password" value="" placeholder="Password">
+                                            </div>
+                                            <label for="doctor_present_district"
+                                                   class="col-sm-2 col-form-label col-form-label-sm">Confirm
+                                                Password</label>
+                                            <div class="col-sm-2">
+                                                <input type="password"
+                                                       class="form-control form-control-sm same_as_pre_add"
+                                                       id="password2" name="password2" value=""
+                                                       placeholder="Confirm Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @php
+            $doctor_id = "";
+            $response_url = route('doctor-card', $doctor_id);
+        @endphp
+        <div class="col-md-12">
+            <div class="employee_registration">
+        <div class="card">
+            <div class="card-body p-2">
+                <button class="btn btn-md btn-success" id="save_update" data-func="afterSaveModal"
+                        data-response-url="{{ $response_url }}" title="Click here to save Doctor Information">Save
+                </button>
+                <button type="reset" class="btn btn-md btn-info">Reset</button>
+                <a href="{{ route('home') }}" class="btn btn-danger btn-md" rel="tab"
+                   title="Click here to go back to Dashboard">Exit</a>
+            </div>
+        </div>
+          </div>
+        </div>
+    </div>
+</form>
+<script type="application/javascript" src="{{ asset('datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script type="application/javascript" src="{{ asset('node_modules/select2/dist/js/select2.min.js')}}"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on('change', '#login_information', function () {
+            if ($(this).is(':checked')) {
+                $(this).parents('#login_information').siblings('#referrer_name_con').removeClass('d-none');
+            } else {
+                $(this).parents('#login_information').siblings('#referrer_name_con').addClass('d-none');
+            }
+
+        });
+        $('.select2').select2();
+    });
+
+    function addMedRow(thisElement) {
+
+        var row = $(thisElement).parents("tr").clone();
+        var oldId = Number($(thisElement).parents("tr").attr("id"));
+        var newId = $(thisElement).parents("#data-append-to").find("tr").length + 1;
+        row.attr('id', newId);
+/*        $(thisElement).parents('tbody').find('#hdn_report_serial_med_' + oldId).val('');
+        $(thisElement).parents('tbody').find('#hdn_medicine_item_id_' + oldId).val('');
+        $(thisElement).parents('tbody').find('#medicine_item_' + oldId).val('');
+        $(thisElement).parents('tbody').find('#medicine_dose_' + oldId).val('0');
+        $(thisElement).parents('tbody').find('#medicine_duration_mu_' + oldId).val('DAY');
+        $(thisElement).parents('tbody').find('#medicine_duration_type_' + oldId).val('');
+        $(thisElement).parents('tbody').find('#medicine_quantity_' + oldId).val('');
+        $(thisElement).parents('tbody').find('#instruction_' + oldId).val('0');*/
+
+        row.find('#med_td_action_' + oldId).attr('id', 'med_td_action_' + newId);
+        $(thisElement).parents("#data-append-to").append(row);
+
+        $('#med_td_action_' + newId).html("<span class='btn btn-danger btn-sm' onclick='removeTableRowOnly(this)'> <i class='fa fa-times'></i> </span>");
+
+    }
+
+    function removeTableRowOnly(thisElement) {
+        if (confirm("Are you sure?")) {
+            $(thisElement).parents("tr").remove();
+        }
+        return;
+    }
+
+    $(function () {
+
+        $(document).on("click", '#save_update', function (e) {
+            if (confirm("Are you sure?")) {
+                var page_type = "{{ $page_type }}";
+                $('#doctor_form').unbind().submit(function (e) {
+                    e.preventDefault();
+                    var formAction = $(this).attr("action");
+                    var formMethod = $(this).attr("method");
+                    var formData = new FormData(this);
+                    var customFunc = $("#save_update").attr("data-func");
+
+                    $.ajax({
+                        type: formMethod,
+                        url: formAction,
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        beforeSend: function () {
+                            if (customFunc == "") {
+                                if (isAModalOpen)
+                                    $('.modal').modal('hide');
+
+                                $('.common-modal-notify').modal('show');
+                                $('.common-modal-notify .modal-body').html("<i class='fas fa-stroopwafel fa-spin'></i>");
+                            }
+                            blockUI();
+                        },
+                        success: function (data) {
+                            var response_url = $("#save_update").attr("data-response-url") + "/" + data.insert_id;
+                            dynamicFunc.afterSaveModal(response_url, "common-modal-sm", "Doctor Card");
+
+                            // marketing
+                            //$("#referrer_name_con").val(data.insert_id);
+
+                            $(this).find("input, textarea").not('.keep_me').val("");
+                            $(this).find("select").not('.keep_me').val("0");
+                        },
+                        error: function (data) {
+                            console.log(data);
+                        }
+                        ,
+                        complete: function () {
+                            $.unblockUI();
+                            if (page_type == 'edit')
+                                dynamicFunc.afterSaveLoadList("{{ route('doctor.loadList') }}");
+                        }
+                        ,
+                        error: function (data) {
+                            var errors = jQuery.parseJSON(data.responseText).errors;
+                            error_messages = "";
+                            for (messages in errors) {
+                                var field_name = $("#" + messages).siblings("label").html();
+                                error_messages += "<div class='alert alert-danger' role='alert'>" + errors[messages] + "</div>";
+                            }
+                            $('.common-modal-notify-error').modal('show');
+                            $('.common-modal-notify-error .modal-title').html("Validation Error");
+                            $('.common-modal-notify-error .modal-body').html(error_messages);
+                            finished = false;
+                            $.unblockUI();
+                        }
+                    })
+                    ;
+                });
+            }else {
+            
+            return false;
+          }
+        });
+    });
+
+    $('.date_picker').datepicker({
+        format: 'dd-mm-yyyy',
+        autoclose: true,
+        todayHighlight: true,
+        clearBtn: true
+    });
+
+</script>
